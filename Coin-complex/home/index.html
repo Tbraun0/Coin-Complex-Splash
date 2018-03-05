@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Coin-Complex</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
+        <!-- Latest compiled and minified CSS -->
+        
+        <link href="../css/style.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+        <link rel="manifest" href="../images/site.webmanifest">
+        <link rel="mask-icon" href="../images/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="../images/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="../images/browserconfig.xml">
+        <meta name="theme-color" content="#ff0000">
+        <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"> -->
+
+    </head>
+
+    <body>
+
+        <!-- Top content -->
+        <div class="top-content">
+        	
+            <div class="inner-bg">
+                <div class="container">
+                	<img id="ccmainlogo" src="../images/logo1.svg">
+                    <img id="ccsublogo" src="../images/CoinComplextest.svg">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h1 id='newslettertop'>Newsletter Signup</h1>
+                            <div class="description">
+                            	<p>
+	                            	When you sign up here, you will get updates on the Coin Complex project as they happen
+                            	</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        	
+                        <div class="col-sm-12">
+                        	
+                        	<div class="form-box">
+                        		<div class="form-top">
+	                        		<div class="form-top-left">
+	                        			<h3>Sign up now</h3>
+	                            		<p class="signuptext">Fill out your email and we'll give you updates</p>
+	                        		</div>
+	                        		<div class="form-top-right">
+	                        			<i class="fa fa-pencil"></i>
+	                        		</div>
+	                            </div>
+	                            <div class="form-bottom" ng-app="ccapp">
+				                    <div class="form-group" ng-controller="EmailSignupController">
+				                       	<label class="sr-only" for="form-email">Email</label>
+				                       	<input ng-model="emailsignupobj.data" type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
+                                        <button ng-click="submitEmail()" id = "ccbtn" class="btn">Sign me up!</button>
+				                    </div>
+				                        
+			                    </div>
+                                <div class="form-group hidden" id="result-container">
+                                    <div class="alert alert-success text-goes-here">
+                                        Hello there!
+                                    </div>
+                                </div>
+                        	</div>
+                        	
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="bodybox">
+            <p>
+                Bitcoin and other cryptocurrencies soared to prominence in 2017 and early 2018, with 
+				Bitcoin’s price reaching $20,000 and the cryptocurrency market cap reaching all-time 
+				highs. If you’ve ever traded cryptocurrency before, you might be aware that hundreds 
+				of exchanges exist to buy and sell cryptocurrency. 
+            </p><hr/>
+            <p>
+            	While cryptocurrency exchanges are abundant, most of these exchanges are difficult to navigate and lack crucial trading features. Even advanced traders frequently experience accessibility, navigation, and trading issues on current exchanges. But trading cryptocurrency doesn’t have to be a complicated endeavor. Our solution? CoinComplex: a next-generation cryptocurrency exchange designed by our computer science team with intuitiveness at its core.
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+        	<div class="container">
+        		<div class="row">
+        			
+        			<div class="col-sm-8 col-sm-offset-2">
+        				<p id="footertop">Coin Complex</p>
+        				<hr id='footerbottombar'></hr>
+        				<p id='footerbottomtext'>A Next Generation Cryptocurrency Exchange</p>
+        			</div>
+        			
+        		</div>
+        	</div>
+        </footer>
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <script src="../js/js.js"></script>
+
+    </body>
+
+</html>

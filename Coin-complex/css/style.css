@@ -1,0 +1,76 @@
+body, .top-content, footer
+{
+	background: #0c0c0c;
+	color: #e9ebeb;
+	font-family: 'NexaLight';
+}
+@font-face {
+    font-family: NexaLight;
+    src: url('../images/Nexa_Light.otf');
+}
+p {
+	color: #e9ebeb;
+}
+hr {
+	width:70%;
+	border-color:#30A1AD;
+}
+h1
+{
+	color: #e9ebeb;
+}
+#newslettertop {
+	font-size:4vw;
+}
+.form-group
+{
+	text-align: center;
+}
+.description {
+	margin-top:0;
+}
+.signuptext {
+	color:#121517;
+}
+#ccbtn
+{
+	margin-top: 20px;
+	background-color: #e9ebeb;
+}
+.bodybox {
+	padding:1em;
+	border-radius: 0.5em;
+	margin:auto;
+	width:90%;
+	background:#121517;
+}
+#ccsublogo {
+	margin-top:1em;
+	width:75%;
+}
+#ccmainlogo
+{
+	width: 25%;
+}
+#ccbtn {
+	color: #121517;
+}
+.form-top
+{
+	background-color: white;
+}
+#footertop {
+	margin-top:5em;
+	margin-bottom:2em;
+}
+#footerbottombar {
+	width:40%;
+	border-top: 1px solid #e9ebeb;
+}
+#footerbottomtext {
+	margin-top:2em;
+}
+.form-bottom
+{
+	background-color: #e9ebeb; 
+}
