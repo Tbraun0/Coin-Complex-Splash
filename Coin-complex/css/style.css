@@ -6,7 +6,7 @@ body, .top-content, footer
 }
 @font-face {
     font-family: NexaLight;
-    src: url('../images/Nexa_Light.otf');
+    src: url('../images/AvenirLTStd-Light.otf');
 }
 p {
 	color: #e9ebeb;
@@ -19,6 +19,52 @@ h1
 {
 	color: #e9ebeb;
 }
+footer {
+	padding-bottom:0;
+	background: #121517;
+}
+.inner-bg {
+
+}
+.logobox {
+	margin:auto;
+	margin-top:1em;
+	margin-bottom:2em;
+	text-align:center;
+	width:15%;
+	position:relative;
+	background: url("../images/logo.svg");
+	background-size:cover;
+}
+.logobox:after {
+	content:"";
+	display:block;
+	padding-bottom:100%;
+}
+.topnavbar {
+
+}
+.topbarcontent {
+	display:flex;
+	align-items:center;
+	max-width:1160px;
+	margin:0 auto;
+	padding-top:10px;
+	padding-bottom:10px;
+	color:#e9ebeb;
+}
+#ccmainlogo {
+	vertical-align:middle;
+}
+.smartertools {
+	margin-top:5%;
+	height:auto;
+	margin-bottom:5%;
+	line-height:48px;
+	text-align:center;
+	font-size:48px;
+	letter-spacing:.2em;
+}
 #newslettertop {
 	font-size:4vw;
 }
@@ -27,6 +73,8 @@ h1
 	text-align: center;
 }
 .description {
+	text-align:center;
+	width:90%;
 	margin-top:0;
 }
 .signuptext {
@@ -39,7 +87,6 @@ h1
 }
 .bodybox {
 	padding:1em;
-	border-radius: 0.5em;
 	margin:auto;
 	width:90%;
 	background:#121517;
@@ -60,7 +107,7 @@ h1
 	background-color: white;
 }
 #footertop {
-	margin-top:5em;
+	margin-top:2em;
 	margin-bottom:2em;
 }
 #footerbottombar {
@@ -68,6 +115,7 @@ h1
 	border-top: 1px solid #e9ebeb;
 }
 #footerbottomtext {
+	margin-bottom:2em;
 	margin-top:2em;
 }
 .form-bottom
