@@ -4,6 +4,10 @@ body, .top-content, footer
 	color: #e9ebeb;
 	font-family: 'NexaLight';
 }
+ul {
+	padding:0;
+	list-style:none;
+}
 @font-face {
     font-family: NexaLight;
     src: url('../images/AvenirLTStd-Light.otf');
@@ -26,15 +30,34 @@ footer {
 .inner-bg {
 
 }
-.logobox {
-	margin:auto;
-	margin-top:1em;
-	margin-bottom:2em;
-	text-align:center;
-	width:15%;
-	position:relative;
-	background: url("../images/logo.svg");
-	background-size:cover;
+.Linkedin {
+	background:url('../images/linkedin.svg');
+	float:right;
+	margin-right:auto;
+	margin-left:auto;	
+	width:30px;
+	height:30px;
+}
+.Instagram {
+	background:url('../images/instagram.svg');	
+	margin-right:auto;
+	margin-left:auto;
+	width:30px;
+	height:30px;
+}
+.FaceBook {
+	background:url('../images/facebook.svg');
+	margin-right:auto;
+	margin-left:auto;
+	width:30px;
+	height:30px;
+}
+.Twitter {
+	background:url('../images/twitter.svg');	
+	margin-right:auto;
+	margin-left:auto;
+	width:30px;
+	height:30px;
 }
 .logobox:after {
 	content:"";
@@ -42,19 +65,33 @@ footer {
 	padding-bottom:100%;
 }
 .topnavbar {
-
+	max-width:1160px;
+	width:100%;
+	margin:0 auto;
+	color:#e9ebeb;
 }
 .topbarcontent {
 	display:flex;
 	align-items:center;
-	max-width:1160px;
-	margin:0 auto;
-	padding-top:10px;
-	padding-bottom:10px;
-	color:#e9ebeb;
+	margin:auto;
+	width:50%;
+	padding:10px;
 }
-#ccmainlogo {
-	vertical-align:middle;
+.CCxLogo {
+	margin-left:auto;
+	margin-right:auto;
+	background:url('../images/logo.svg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	width:100px;
+	height:100px;
+}
+.CCxSubText {
+	background:url('../images/CoinComplextest.svg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	width:300px;
+	height:50px;
 }
 .smartertools {
 	margin-top:5%;
