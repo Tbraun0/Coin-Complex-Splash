@@ -14,6 +14,8 @@ ul {
 }
 p {
 	color: #e9ebeb;
+	margin: 0 0 10px 0;
+	display:block;
 }
 hr {
 	width:70%;
@@ -59,6 +61,12 @@ footer {
 	width:30px;
 	height:30px;
 }
+.NavBarLink {
+	font-size:1em;
+	font-family: 'NexaLight';
+	margin-right:auto;
+	margin-left:auto;
+}
 .logobox:after {
 	content:"";
 	display:block;
@@ -69,14 +77,29 @@ footer {
 	width:100%;
 	margin:0 auto;
 	color:#e9ebeb;
-	margin-bottom: 1px solid #e9ebeb;
+	border-bottom: 1px solid #e9ebeb;
 }
 .topbarcontent {
 	display:flex;
 	align-items:center;
 	margin:auto;
 	width:50%;
+	min-width:300px;
 	padding:10px;
+}
+.Top_Content_Padding {
+	width:100%;
+	padding-right:15px;
+	padding-left:15px;
+}
+.Top_Content_Margin {
+	margin-left:15%;
+	margin-right:15%;
+}
+.Max-Width-container {
+	margin:0 auto;
+	max-width:1160px;
+	width:100%;
 }
 .CCxLogo {
 	margin-left:auto;
