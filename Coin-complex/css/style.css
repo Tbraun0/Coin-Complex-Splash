@@ -29,9 +29,6 @@ footer {
 	padding-bottom:0;
 	background: #121517;
 }
-.inner-bg {
-
-}
 .Linkedin {
 	background:url('../images/linkedin.svg');
 	float:right;
@@ -64,8 +61,14 @@ footer {
 .NavBarLink {
 	font-size:1em;
 	font-family: 'NexaLight';
-	margin-right:auto;
-	margin-left:auto;
+	color:#e9ebeb;
+	transition:color .25s;
+	-webkit-transition: color .25s;
+}
+.NavBarLink:hover {
+	color:#30A1AD;
+	transition:color .25s;
+	-webkit-transition: color .25s;
 }
 .logobox:after {
 	content:"";
@@ -73,11 +76,11 @@ footer {
 	padding-bottom:100%;
 }
 .topnavbar {
-	max-width:1160px;
+	position:fixed;
+	background:#0c0c0c;
 	width:100%;
 	margin:0 auto;
 	color:#e9ebeb;
-	border-bottom: 1px solid #e9ebeb;
 }
 .topbarcontent {
 	display:flex;
@@ -85,20 +88,43 @@ footer {
 	margin:auto;
 	width:50%;
 	min-width:300px;
-	padding:10px;
+	padding:20px;
+}
+.LinkContainer {
+	width:70px;
+}
+.Max-Width-container {
+	width:100%;
+	max-width:1160px;
+	margin:0 auto;
+}
+.Top_Content_Background {
+	background:blue;
 }
 .Top_Content_Padding {
 	width:100%;
-	padding-right:15px;
-	padding-left:15px;
+	max-width:1160px;
+	margin:0 auto;
+	padding:15px;
+}
+.What_We_Offer {
+	font-size:2em;
+	font-family: 'NexaLight';
 }
 .Top_Content_Margin {
-	margin-left:15%;
-	margin-right:15%;
+	margin-left:18%;
+	margin-right:18%;
+}
+.Middle_Content_Box {
+	width:100%;
+}
+.Middle_Content_Padding {
+width:100%;
+margin:0 auto;
+ padding:20px;
 }
 .Max-Width-container {
 	margin:0 auto;
-	max-width:1160px;
 	width:100%;
 }
 .CCxLogo {
@@ -107,8 +133,8 @@ footer {
 	background:url('../images/logo.svg');
 	background-size:cover;
 	background-repeat:no-repeat;
-	width:100px;
-	height:100px;
+	width:75px;
+	height:75px;
 }
 .CCxSubText {
 	background:url('../images/CoinComplextest.svg');
