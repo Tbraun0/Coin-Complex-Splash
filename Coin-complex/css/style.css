@@ -1,6 +1,6 @@
 body, .top-content, footer
 {
-	background: #0c0c0c;
+	background: black;
 	color: #e9ebeb;
 	font-family: 'NexaLight';
 }
@@ -28,6 +28,25 @@ h1
 footer {
 	padding-bottom:0;
 	background: #121517;
+}
+video {
+	position:absolute;
+	z-index:-1;
+	margin:0 auto;
+	display:block;
+	object-fit:cover;
+	background:#0c0c0c;
+}
+video.fillWidth {
+	min-width:300px;
+	width:100%;
+	max-width:1160px;
+}
+@media only screen and (min-width:1160px) {
+	video {
+		left:50%;
+		margin-left:-580px;
+	}
 }
 .Linkedin {
 	background:url('../images/linkedin.svg');
@@ -77,7 +96,8 @@ footer {
 }
 .topnavbar {
 	position:fixed;
-	background:#0c0c0c;
+	z-index:100;
+	background:rgba(0,0,0,0.95);
 	width:100%;
 	margin:0 auto;
 	color:#e9ebeb;
@@ -87,6 +107,7 @@ footer {
 	align-items:center;
 	margin:auto;
 	width:50%;
+	max-width:400px;
 	min-width:300px;
 	padding:20px;
 }
@@ -96,10 +117,14 @@ footer {
 .Max-Width-container {
 	width:100%;
 	max-width:1160px;
+	min-width:300px;
 	margin:0 auto;
 }
 .Top_Content_Background {
-	background:blue;
+	background:url("../images/artboard1.png");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
 }
 .Top_Content_Padding {
 	width:100%;
@@ -116,6 +141,8 @@ footer {
 	margin-right:18%;
 }
 .Middle_Content_Box {
+	display:flex;
+
 	width:100%;
 }
 .Middle_Content_Padding {
@@ -126,6 +153,9 @@ margin:0 auto;
 .Max-Width-container {
 	margin:0 auto;
 	width:100%;
+}
+.Link_Container {
+	width:70px;
 }
 .CCxLogo {
 	margin-left:auto;
