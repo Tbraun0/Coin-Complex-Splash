@@ -106,7 +106,7 @@ video.fillWidth {
 .topnavbar {
 	position:fixed;
 	z-index:100;
-	background:rgba(0,0,0,0.95);
+	background:rgba(12,12,12,0.95);
 	width:100%;
 	margin:0 auto;
 	color:#e9ebeb;
@@ -115,6 +115,7 @@ video.fillWidth {
 .topbarcontent {
 	padding-top:10px !important;
 	padding-bottom:10px !important;
+	transition:padding 0.5s;
 }
 .topbarcontentlarge {
 	display:flex;
@@ -125,6 +126,7 @@ video.fillWidth {
 	min-width:300px;
 	padding-top:25px;
 	padding-bottom:25px;
+	transition:padding 0.5s;
 }
 .LinkContainer {
 	width:70px;
@@ -136,7 +138,6 @@ video.fillWidth {
 	margin:0 auto;
 }
 .Top_Content_Background {
-	background:url("../images/artboard1.png");
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:center;
