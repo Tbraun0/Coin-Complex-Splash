@@ -94,6 +94,15 @@ video.fillWidth {
 	display:block;
 	padding-bottom:100%;
 }
+.topnavbartransparent {
+	position:fixed;
+	z-index:100;
+	background:rgba(0,0,0,0);
+	width:100%;
+	margin:0 auto;
+	color:#e9ebeb;
+	transition:background 0.5s;
+}
 .topnavbar {
 	position:fixed;
 	z-index:100;
@@ -101,15 +110,21 @@ video.fillWidth {
 	width:100%;
 	margin:0 auto;
 	color:#e9ebeb;
+	transition:background 0.5s;
 }
 .topbarcontent {
+	padding-top:10px !important;
+	padding-bottom:10px !important;
+}
+.topbarcontentlarge {
 	display:flex;
 	align-items:center;
 	margin:auto;
 	width:50%;
 	max-width:400px;
 	min-width:300px;
-	padding:20px;
+	padding-top:25px;
+	padding-bottom:25px;
 }
 .LinkContainer {
 	width:70px;

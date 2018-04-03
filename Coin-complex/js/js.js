@@ -241,5 +241,18 @@ function($scope, $http, $sce)
 
 $(document).ready(function()
 {
+  var scrollTop = 0;
+  $(window).scroll(function(){
+    scrollTop = $(window).scrollTop();
+    
+    if (scrollTop >= 100) {
+      $('#myNav').addClass('topnavbar');
+      $('#bar_Content_ID').addClass('topbarcontent');
+    } else if (scrollTop < 100) {
+      $('#myNav').removeClass('topnavbar');
+      $('#bar_Content_ID').removeClass('topbarcontent');
+    } 
+    
+  }); 
 
 });
