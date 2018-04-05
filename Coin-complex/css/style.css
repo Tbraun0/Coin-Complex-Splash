@@ -25,6 +25,11 @@ h1
 {
 	color: #e9ebeb;
 }
+a {
+	outline:none;
+	border:0;
+	text-decoration:none;
+}
 footer {
 	padding-bottom:0;
 	background: #121517;
@@ -191,6 +196,7 @@ margin:0 auto;
 	margin:0 auto;
 	width:100%;
 }
+
 .Link_Container {
 	width:100px;
 	margin-left:5px;
@@ -202,6 +208,11 @@ margin:0 auto;
 	margin-right:auto;
 	height:auto;
 }
+.CCxLogo:hover {
+    -webkit-filter: drop-shadow( 0px -5px 5px #30a1ad ); 
+            filter: drop-shadow( -0px -5px 5px #30a1ad );
+}
+
 .CCxLogoLarge {
 	margin-left:auto;
 	margin-right:auto;
