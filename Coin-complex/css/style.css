@@ -135,6 +135,9 @@ video.fillWidth {
 .LinkContainer {
 	width:70px;
 }
+.container {
+	width:100%;
+}
 .Max-Width-container {
 	width:100%;
 	max-width:1160px;
@@ -221,6 +224,12 @@ margin:0 auto;
 	font-size:48px;
 	letter-spacing:.2em;
 }
+.Bottom_Content_Background {
+	background:url("../images/Manhattan.png");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
 #newslettertop {
 	font-size:4vw;
 }
@@ -234,21 +243,31 @@ margin:0 auto;
 	margin-top:0;
 }
 .signuptext {
+	font-size:1em;
 	color:#e9ebeb;
-}
-#ccbtn
-{
-	margin-top: 20px;
-	background-color: #e9ebeb;
 }
 .bodybox {
 	padding:1em;
 	margin-bottom:50px;
 	margin:auto;
 	width:90%;
-	background:#121517;
+	background:transparent;
 }
-
+.Footer_Container_Box {
+	min-width:300px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:30px;
+}
+.Footer_Container_Box_Flex {
+	margin-left:auto;
+	margin-right:auto;
+	display:flex;
+	align-items:center;
+}
+.form-top-left {
+	width:100%;
+}
 #ccsublogo {
 	margin-top:1em;
 	width:75%;
@@ -258,12 +277,23 @@ margin:0 auto;
 	width: 25%;
 }
 #ccbtn {
-	color: #121517;
+	margin-top:20px;
+	background:none;
+	border:1px solid #e9ebeb;
+	border-radius:0px;
+	color: #e9ebeb;
+	transition:background 0.5s;
+}
+#ccbtn:hover {
+	opacity:1;
+	background:#30a1ad;
+	transition:background 0.5s;
 }
 .form-top
 {
-	border:1px solid #30a1ad;
+	border-bottom:1px solid #30a1ad;
 	background-color: transparent;
+	border-radius:0px;
 }
 #footertop {
 	margin-top:2em;
@@ -271,7 +301,7 @@ margin:0 auto;
 }
 #footerbottombar {
 	width:40%;
-	border-top: 1px solid #e9ebeb;
+	border-top: 1px solid #30a1ad;
 }
 #imagebottombar {
 	margin-top:1px;
@@ -286,18 +316,32 @@ margin:0 auto;
 	margin-top:2em;
 }
 .Footer_Container {
+	border-top:1px solid #30a1ad;
 	display:flex;
 	align-items:center;
 	flex-wrap:wrap;
 }
+.Middle_Content_Box_Text {
+	width:100%;
+	border:1px solid #30a1ad;
+}
 .form-box {
-	border-radius:0;
+	border-radius:0px;
 }
 .form-bottom
 {
-
-	border-left:1px solid #30a1ad;
-	border-right:1px solid #30a1ad;
-	border-bottom:1px solid #30a1ad;
 	background:transparent; 
+	border-radius:0px;
+}
+#form-email {
+	border-radius:0px;
+	border:1px solid #e9ebeb;
+	background:transparent;
+}
+#Social_Text_Container {
+	width:100%;
+	font-size:1em;
+	text-align:center;
+	margin-bottom:20px;
+	border-bottom:1px solid #30a1ad;
 }

@@ -83,16 +83,20 @@
 			    <p>&nbsp;</p>
 			    <div class="Middle_Content_Box">
                     <div class="Middle_Content_Box_Content">
-                    	More Data for Users
-                		<hr id='imagebottombar'></hr>
+                    	<div class="Middle_Content_Box_Text">
+                    		More Data for Users
+                    	</div>
+                		<img class="Three_Points_Image" src="../images/MoreData.svg" width="230" height="230">
                     </div>
                     <div class="Middle_Content_Box_Content">
-                    	A cleaner UI
-                    	<hr id='imagebottombar'></hr>
+                    	<div class="Middle_Content_Box_Text">
+                    		A cleaner UI
+                    	</div>
                     </div>
                     <div class="Middle_Content_Box_Content">
-                    	Security
-                    	<hr id='imagebottombar'></hr>
+                    	<div class="Middle_Content_Box_Text">
+                    		Security
+                    	</div>
                     </div>
 			    </div>
         	</div>
@@ -110,40 +114,86 @@
                 </div>
             </div>
         </div>
+
+            <div class="Bottom_Content_Background">
+            	<div class="Top_Content_Padding">
+            		<div class="Top_Content_Margin">
+		            	<div class="Top_Content_Inner">
+			                <div class="Inner_Container">
+			                    <p>&nbsp;</p>
+			                    <p>&nbsp;</p>
+			                    <p>&nbsp;</p>
+			                    <p>&nbsp;</p>	
+			                    <p>&nbsp;</p>
+			                    <p>&nbsp;</p>
+			                    <p>&nbsp;</p>
+			                    <p>&nbsp;</p>		                
+			                    <p>&nbsp;</p>
+			                    <p>&nbsp;</p>
+			                    <p>&nbsp;</p>
+			                    <p>&nbsp;</p>		                
+			                    <p>&nbsp;</p>
+			                    <p>&nbsp;</p>
+			                    <p>&nbsp;</p>			                    
+			                    <p>&nbsp;</p>
+			                    <p>&nbsp;</p>               
+			                </div>
+		            	</div>
+	            	</div>
+            	</div>
+            </div>
+
             <!-- Footer -->
             <footer class="Footer_Container">
-            	<div class="container">
-                    <div class="form-box">
-                        <div class="form-top">
-                            <div class="form-top-left">
-                                <h3 class="signuptext">Sign up now</h3>
-                                    <p class="signuptext">Fill out your email and we'll give you updates</p>
-                            </div>
-                            <div class="form-top-right">
-                            <i class="fa fa-pencil"></i>
-                        </div>
-                    </div>
-                    <div class="form-bottom" ng-app="ccapp">
-                        <div class="form-group" ng-controller="EmailSignupController">
-                            <label class="sr-only" for="form-email">Email</label>
-                                <input ng-model="emailsignupobj.data" type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
-                                    <button ng-click="submitEmail()" id = "ccbtn" class="btn">Sign me up!</button>
-                        </div>                       
-                    </div>
-                    <div class="form-group hidden" id="result-container">
-                        <div class="alert alert-success text-goes-here">
-                            Hello there!
-                        </div>
-                    </div>
-                </div>
-                                
-            	<div class="row"> 			
-            		<div class="col-sm-8 col-sm-offset-2">
-            			<p id="footertop">Coin Complex</p>
-            			<hr id='footerbottombar'></hr>
-            			<p id='footerbottomtext'>A Next Generation Cryptocurrency Exchange</p>
-            		</div>	
-            		</div>
+            	<div class="Footer_Container_Box">
+	            	<div class="container">
+	                    <div class="form-box">
+	                        <div class="form-top">
+	                            <div class="form-top-left">
+	                                <h3 class="signuptext">Mailing List</h3>
+	                                    <div class="signuptext">Fill out your email and we'll give you updates</div>
+	                            </div>
+	                            <div class="form-top-right">
+	                           		<i class="fa fa-pencil"></i>
+	                        	</div>
+	                    	</div>
+	                    <div class="form-bottom" ng-app="ccapp">
+	                        <div class="form-group" ng-controller="EmailSignupController">
+	                            <label class="sr-only" for="form-email">Email</label>
+	                                <input ng-model="emailsignupobj.data" type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
+	                                    <button ng-click="submitEmail()" id = "ccbtn" class="btn">Sign me up!</button>
+	                        </div>                       
+	                    </div>
+	                    <div class="form-group hidden" id="result-container">
+	                        <div class="alert alert-success text-goes-here">
+	                            Hello there!
+	                        </div>
+	                    </div>
+	                	</div>
+	                </div>
+            	</div>
+                            
+                <div class="Footer_Container_Box">    
+	            	<div class="row"> 			
+	            		<div class="col-sm-8 col-sm-offset-2">
+	            			<p id="footertop">Coin Complex</p>
+	            			<hr id='footerbottombar'></hr>
+	            			<p id='footerbottomtext'>A Next Generation Cryptocurrency Exchange</p>
+	            		</div>	
+	            	</div>
+	            </div>
+
+            	<div class="Footer_Container_Box">
+                    <div id="Social_Text_Container">Social</div>
+                    <div class="Footer_Container_Box_Flex">
+                    <a class="Linkedin" href="https://www.google.com/">
+                    </a>
+                    <a class="Instagram" href="https://www.google.com/">
+                    </a>
+                    <a class="FaceBook" href="https://www.google.com/">
+                    </a>
+                    <a class="Twitter" href="https://twitter.com/CoinComplex">
+                    </a>
             	</div>
             </footer>
 
