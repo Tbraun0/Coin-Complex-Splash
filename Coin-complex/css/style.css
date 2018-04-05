@@ -31,6 +31,8 @@ footer {
 }
 video {
 	position:absolute;
+	top:100;
+	opacity:0.9;
 	z-index:-1;
 	margin:0 auto;
 	display:block;
@@ -39,6 +41,7 @@ video {
 }
 video.fillWidth {
 	min-width:300px;
+	margin-top:100px;
 	width:100%;
 	max-width:1160px;
 }
@@ -106,7 +109,8 @@ video.fillWidth {
 .topnavbar {
 	position:fixed;
 	z-index:100;
-	background:rgba(12,12,12,0.95);
+	background:linear-gradient(rgba(12,12,12,.95), rgba(0,0,0,.95));
+	box-shadow:0 4px 2px -2px black;
 	width:100%;
 	margin:0 auto;
 	color:#e9ebeb;
@@ -124,8 +128,8 @@ video.fillWidth {
 	width:50%;
 	max-width:400px;
 	min-width:300px;
-	padding-top:25px;
-	padding-bottom:25px;
+	padding-top:35px;
+	padding-bottom:35px;
 	transition:padding 0.5s;
 }
 .LinkContainer {
@@ -150,6 +154,7 @@ video.fillWidth {
 }
 .What_We_Offer {
 	font-size:2em;
+	letter-spacing:5px;
 	font-family: 'NexaLight';
 }
 .Top_Content_Margin {
@@ -158,8 +163,21 @@ video.fillWidth {
 }
 .Middle_Content_Box {
 	display:flex;
-
+	align-items:center;
+	flex-wrap:wrap;
 	width:100%;
+}
+.Middle_Content_Box_Content {
+	width:300px;
+	height:300px;
+	padding:15px;
+	margin-top:10px;
+	margin-bottom:10px;
+	font-size:1.25em;
+	letter-spacing:1px;
+	background:transparent;
+	margin-right:auto;
+	margin-left:auto;
 }
 .Middle_Content_Padding {
 width:100%;
@@ -171,16 +189,21 @@ margin:0 auto;
 	width:100%;
 }
 .Link_Container {
-	width:70px;
+	width:100px;
+	margin-left:5px;
+	margin-right:5px;
+	border:1px solid #30A1AD;
 }
 .CCxLogo {
 	margin-left:auto;
 	margin-right:auto;
-	background:url('../images/logo.svg');
-	background-size:cover;
-	background-repeat:no-repeat;
-	width:75px;
-	height:75px;
+	height:auto;
+}
+.CCxLogoLarge {
+	margin-left:auto;
+	margin-right:auto;
+	height:auto;
+	transition:width 0.5s;
 }
 .CCxSubText {
 	background:url('../images/CoinComplextest.svg');
@@ -211,7 +234,7 @@ margin:0 auto;
 	margin-top:0;
 }
 .signuptext {
-	color:#121517;
+	color:#e9ebeb;
 }
 #ccbtn
 {
@@ -220,10 +243,12 @@ margin:0 auto;
 }
 .bodybox {
 	padding:1em;
+	margin-bottom:50px;
 	margin:auto;
 	width:90%;
 	background:#121517;
 }
+
 #ccsublogo {
 	margin-top:1em;
 	width:75%;
@@ -237,7 +262,8 @@ margin:0 auto;
 }
 .form-top
 {
-	background-color: white;
+	border:1px solid #30a1ad;
+	background-color: transparent;
 }
 #footertop {
 	margin-top:2em;
@@ -247,11 +273,31 @@ margin:0 auto;
 	width:40%;
 	border-top: 1px solid #e9ebeb;
 }
+#imagebottombar {
+	margin-top:1px;
+	margin-bottom:1px;
+	margin-left:0;
+	margin-right:0;
+	width:100%;
+	border-top: 1px solid #30a1ad;
+}
 #footerbottomtext {
 	margin-bottom:2em;
 	margin-top:2em;
 }
+.Footer_Container {
+	display:flex;
+	align-items:center;
+	flex-wrap:wrap;
+}
+.form-box {
+	border-radius:0;
+}
 .form-bottom
 {
-	background-color: #e9ebeb; 
+
+	border-left:1px solid #30a1ad;
+	border-right:1px solid #30a1ad;
+	border-bottom:1px solid #30a1ad;
+	background:transparent; 
 }

@@ -38,13 +38,7 @@
             <!-- Top content -->
             <div id="myNav" class="topnavbartransparent">
                 <div id="bar_Content_ID" class="topbarcontentlarge">
-                	<div class=Link_Container"">
-                    	<a href="./exchange.html" class="NavBarLink">Exchange</a>
-                    </div>
-                    <div class="CCxLogo"></div>
-                    <div class="Link_Container">
-                    	<a href="./about.html" class="NavBarLink">About</a>
-                    </div>
+                    <img src="../images/logo.svg" width="75" id="CCLogo" class="CCxLogo">
                 </div>
             </div>
 
@@ -88,85 +82,67 @@
         		</div>
 			    <p>&nbsp;</p>
 			    <div class="Middle_Content_Box">
-			    	More Data for Users
-
-			    	A cleaner UI
-
-			    	
+                    <div class="Middle_Content_Box_Content">
+                    	More Data for Users
+                		<hr id='imagebottombar'></hr>
+                    </div>
+                    <div class="Middle_Content_Box_Content">
+                    	A cleaner UI
+                    	<hr id='imagebottombar'></hr>
+                    </div>
+                    <div class="Middle_Content_Box_Content">
+                    	Security
+                    	<hr id='imagebottombar'></hr>
+                    </div>
 			    </div>
         	</div>
-            <div class="bodybox">
-                <p>
-                    Bitcoin and other cryptocurrencies soared to prominence in 2017 and early 2018, with 
-    				Bitcoin’s price reaching $20,000 and the cryptocurrency market cap reaching all-time 
-    				highs. If you’ve ever traded cryptocurrency before, you might be aware that hundreds 
-    				of exchanges exist to buy and sell cryptocurrency. 
-                </p><hr/>
-                <p>
-                	While cryptocurrency exchanges are abundant, most of these exchanges are difficult to navigate and lack crucial trading features. Even advanced traders frequently experience accessibility, navigation, and trading issues on current exchanges. But trading cryptocurrency doesn’t have to be a complicated endeavor. Our solution? CoinComplex: a next-generation cryptocurrency exchange designed with intuitiveness at its core.
-                </p>
+            <div class="Middle_Content_Padding">
+                <div class="bodybox">
+                    <p>
+                        Bitcoin and other cryptocurrencies soared to prominence in 2017 and early 2018, with 
+        				Bitcoin’s price reaching $20,000 and the cryptocurrency market cap reaching all-time 
+        				highs. If you’ve ever traded cryptocurrency before, you might be aware that hundreds 
+        				of exchanges exist to buy and sell cryptocurrency. 
+                    </p><hr/>
+                    <p>
+                    	While cryptocurrency exchanges are abundant, most of these exchanges are difficult to navigate and lack crucial trading features. Even advanced traders frequently experience accessibility, navigation, and trading issues on current exchanges. But trading cryptocurrency doesn’t have to be a complicated endeavor. Our solution? CoinComplex: a next-generation cryptocurrency exchange designed with intuitiveness at its core.
+                    </p>
+                </div>
             </div>
-
-                <div class="inner-bg">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-8 col-sm-offset-2 text">
-                                <h1 id='newslettertop'>Newsletter Signup</h1>
-                                <div class="description">
-                                	<p>
-    	                            	When you sign up here, you will get updates on the Coin Complex project as they happen
-                                	</p>
-                                </div>
+        </div>
+            <!-- Footer -->
+            <footer class="Footer_Container">
+            	<div class="container">
+                    <div class="form-box">
+                        <div class="form-top">
+                            <div class="form-top-left">
+                                <h3 class="signuptext">Sign up now</h3>
+                                    <p class="signuptext">Fill out your email and we'll give you updates</p>
                             </div>
+                            <div class="form-top-right">
+                            <i class="fa fa-pencil"></i>
                         </div>
-                        
-                        <div class="row">
-                            	
-                            <div class="col-sm-12">
-                            	
-                            	<div class="form-box">
-                            		<div class="form-top">
-    	                        		<div class="form-top-left">
-    	                        			<h3>Sign up now</h3>
-    	                            		<p class="signuptext">Fill out your email and we'll give you updates</p>
-    	                        		</div>
-    	                        		<div class="form-top-right">
-    	                        			<i class="fa fa-pencil"></i>
-    	                        		</div>
-    	                            </div>
-    	                            <div class="form-bottom" ng-app="ccapp">
-    				                    <div class="form-group" ng-controller="EmailSignupController">
-    				                       	<label class="sr-only" for="form-email">Email</label>
-    				                       	<input ng-model="emailsignupobj.data" type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
-                                            <button ng-click="submitEmail()" id = "ccbtn" class="btn">Sign me up!</button>
-    				                    </div>
-    				                        
-    			                    </div>
-                                    <div class="form-group hidden" id="result-container">
-                                        <div class="alert alert-success text-goes-here">
-                                            Hello there!
-                                        </div>
-                                    </div>
-                            	</div>
-                            	
-                            </div>
+                    </div>
+                    <div class="form-bottom" ng-app="ccapp">
+                        <div class="form-group" ng-controller="EmailSignupController">
+                            <label class="sr-only" for="form-email">Email</label>
+                                <input ng-model="emailsignupobj.data" type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
+                                    <button ng-click="submitEmail()" id = "ccbtn" class="btn">Sign me up!</button>
+                        </div>                       
+                    </div>
+                    <div class="form-group hidden" id="result-container">
+                        <div class="alert alert-success text-goes-here">
+                            Hello there!
                         </div>
-                        
                     </div>
                 </div>
-                
-            </div>
-            <!-- Footer -->
-            <footer>
-            	<div class="container">
-            		<div class="row">
-            			
-            			<div class="col-sm-8 col-sm-offset-2">
-            				<p id="footertop">Coin Complex</p>
-            				<hr id='footerbottombar'></hr>
-            				<p id='footerbottomtext'>A Next Generation Cryptocurrency Exchange</p>
-            			</div>
-            			
+                                
+            	<div class="row"> 			
+            		<div class="col-sm-8 col-sm-offset-2">
+            			<p id="footertop">Coin Complex</p>
+            			<hr id='footerbottombar'></hr>
+            			<p id='footerbottomtext'>A Next Generation Cryptocurrency Exchange</p>
+            		</div>	
             		</div>
             	</div>
             </footer>
