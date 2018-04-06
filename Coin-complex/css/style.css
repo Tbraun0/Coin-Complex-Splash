@@ -149,6 +149,7 @@ video.fillWidth {
 	min-width:300px;
 	margin:0 auto;
 }
+
 .Top_Content_Background {
 	height:100%;
 	background-size:cover;
@@ -196,11 +197,19 @@ video.fillWidth {
 width:100%;
 margin:0 auto;
  padding:20px;
+ opacity:0;
+ animation-delay:.5s;
+ transition:opacity 1s;
 }
-.Max-Width-container {
-	margin:0 auto;
-	width:100%;
+.Middle_Content_Padding.in-view {
+width:100%;
+margin:0 auto;
+ padding:20px;
+ opacity:1;
+ animation-delay:.5s;
+ transition:opacity 1s;
 }
+
 
 .Link_Container {
 	width:100px;
