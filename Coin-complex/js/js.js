@@ -248,10 +248,12 @@ $(document).ready(function()
     if (scrollTop >= 25) {
       $('#myNav').addClass('topnavbar');
       $('#bar_Content_ID').addClass('topbarcontent');
+      $('#TopLogo').addClass('CCxLogo');
 
     } else if (scrollTop < 25) {
       $('#myNav').removeClass('topnavbar');
       $('#bar_Content_ID').removeClass('topbarcontent');
+      $('#TopLogo').removeClass('CCxLogo');
     } 
     
   }); 

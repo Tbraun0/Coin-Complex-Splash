@@ -150,6 +150,7 @@ video.fillWidth {
 	margin:0 auto;
 }
 .Top_Content_Background {
+	height:100%;
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:center;
@@ -159,6 +160,10 @@ video.fillWidth {
 	max-width:1160px;
 	margin:0 auto;
 	padding:15px;
+}
+.Margin {
+	margin-left:auto;
+	margin-right:auto;
 }
 .What_We_Offer {
 	font-size:2em;
@@ -207,6 +212,7 @@ margin:0 auto;
 	margin-left:auto;
 	margin-right:auto;
 	height:auto;
+	width:75px !important;
 }
 .CCxLogo:hover {
     -webkit-filter: drop-shadow( 0px -5px 5px #30a1ad ); 
@@ -217,6 +223,7 @@ margin:0 auto;
 	margin-left:auto;
 	margin-right:auto;
 	height:auto;
+	width:125px f;
 	transition:width 0.5s;
 }
 .CCxSubText {
@@ -236,6 +243,9 @@ margin:0 auto;
 	letter-spacing:.2em;
 }
 .Bottom_Content_Background {
+	-webkit-box-shadow: 0 0 1px 10px #000 inset;
+	-moz-box-shadow: 0 0 1px 10px #000 inset;
+	box-shadow: 0 0 1px 10px #000 inset;
 	background:url("../images/Manhattan.png");
 	background-size:cover;
 	background-repeat:no-repeat;
@@ -265,7 +275,7 @@ margin:0 auto;
 	background:transparent;
 }
 .Footer_Container_Box {
-	min-width:300px;
+	width:300px;
 	margin-left:auto;
 	margin-right:auto;
 	margin-bottom:30px;
@@ -275,6 +285,9 @@ margin:0 auto;
 	margin-right:auto;
 	display:flex;
 	align-items:center;
+}
+.Description_Container {
+	letter-spacing:1px;
 }
 .form-top-left {
 	width:100%;
