@@ -4,6 +4,7 @@ body, .top-content, footer
 	color: #e9ebeb;
 	font-family: 'NexaLight';
 }
+
 ul {
 	padding:0;
 	list-style:none;
@@ -181,6 +182,24 @@ video.fillWidth {
 	flex-wrap:wrap;
 	width:100%;
 }
+.Front-Page-Content {
+	width:100%;
+	height:100vh;
+	min-height:950px;
+	position: relative;
+	text-align:center;
+}
+.Back_Panel {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:transparent;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
 .Middle_Content_Box_Content {
 	width:300px;
 	height:300px;
@@ -198,7 +217,7 @@ width:100%;
 margin:0 auto;
  padding:20px;
  opacity:0;
- animation-delay:.5s;
+ animation-delay:1s;
  transition:opacity 1s;
 }
 .Middle_Content_Padding.in-view {

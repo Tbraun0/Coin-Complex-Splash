@@ -268,6 +268,10 @@ function check_if_in_view() {
 }
 
 
+
+
+
+
 $(document).ready(function()
 {
   var scrollTop = 0;
