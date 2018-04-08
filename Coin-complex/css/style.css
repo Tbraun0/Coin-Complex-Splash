@@ -27,10 +27,17 @@ h1
 	color: #e9ebeb;
 }
 a {
-	outline:none;
+	outline:0;
 	border:0;
 	text-decoration:none;
 }
+a:hover, a:active, a:focus {
+  /* styling for any way a link is about to be used */
+  border:0;
+	outline:0;
+	text-decoration:none !important;
+}
+
 footer {
 	padding-bottom:0;
 	background: #121517;
@@ -225,6 +232,11 @@ margin:0 auto;
 	margin-right:5px;
 	border:1px solid #30A1AD;
 }
+.Footer_Link_Container {
+	width:200px;
+	line-height:40px;
+	margin:0 auto;
+}
 .CCxLogo {
 	margin-left:auto;
 	margin-right:auto;
@@ -299,8 +311,33 @@ margin:0 auto;
 	margin-right:auto;
 	margin-bottom:30px;
 }
+.Footer_Container_Box a {
+	outline:0;
+	color:#e9ebeb;
+	text-decoration:none;
+}
+.Footer_Container_Box a:hover {
+	outline:0;
+	color:#e9ebeb;
+	text-decoration:none;
+}
 .Footer_Container_Box_Flex {
-
+	width:100%;
+}
+.List_Link {
+	border:0;
+	outline:0;
+	color:#e9ebeb;
+	text-decoration: none; /* no underline */
+	font-size:1.5em;
+}
+.List_Link:hover {
+	outline:0 !important;
+	text-decoration:none !important;
+}
+.List_Link a {
+	outline:0;
+	text-decoration:none;
 }
 .Description_Container {
 	letter-spacing:1px;
@@ -347,12 +384,6 @@ margin:0 auto;
 	width:100%;
 	border-top: 1px solid #30a1ad;
 }
-.LinkText {
-	background:transparent;
-	font-size:2em;
-	color:#e9ebeb;
-	margin-left:40px;
-}
 .Bottom_LLC_Outer {
 	width:100%;
 }
@@ -375,7 +406,7 @@ margin:0 auto;
 }
 #footerbottomtext {
 	padding-top:20px;
-	border-top:1px solid #30a1ad;
+	border-top:1px solid #e9ebeb;
 	margin-bottom:2em;
 	margin-top:2em;
 }
