@@ -58,33 +58,14 @@ video.fillWidth {
 	}
 }
 .Linkedin {
-	background:url('../images/linkedin.svg');
-	float:right;
-	margin-right:auto;
-	margin-left:auto;	
-	width:30px;
-	height:30px;
 }
 .Instagram {
-	background:url('../images/instagram.svg');	
-	margin-right:auto;
-	margin-left:auto;
-	width:30px;
-	height:30px;
+
 }
 .FaceBook {
-	background:url('../images/facebook.svg');
-	margin-right:auto;
-	margin-left:auto;
-	width:30px;
-	height:30px;
 }
 .Twitter {
-	background:url('../images/twitter.svg');	
-	margin-right:auto;
-	margin-left:auto;
-	width:30px;
-	height:30px;
+
 }
 .NavBarLink {
 	font-size:1em;
@@ -311,16 +292,15 @@ margin:0 auto;
 	background:transparent;
 }
 .Footer_Container_Box {
-	width:300px;
+	min-width:300px;
+	width:33%;
+	height:100%;
 	margin-left:auto;
 	margin-right:auto;
 	margin-bottom:30px;
 }
 .Footer_Container_Box_Flex {
-	margin-left:auto;
-	margin-right:auto;
-	display:flex;
-	align-items:center;
+
 }
 .Description_Container {
 	letter-spacing:1px;
@@ -351,7 +331,6 @@ margin:0 auto;
 }
 .form-top
 {
-	border-bottom:1px solid #30a1ad;
 	background-color: transparent;
 	border-radius:0px;
 }
@@ -359,10 +338,7 @@ margin:0 auto;
 	margin-top:2em;
 	margin-bottom:2em;
 }
-#footerbottombar {
-	width:40%;
-	border-top: 1px solid #30a1ad;
-}
+
 #imagebottombar {
 	margin-top:1px;
 	margin-bottom:1px;
@@ -371,7 +347,35 @@ margin:0 auto;
 	width:100%;
 	border-top: 1px solid #30a1ad;
 }
+.LinkText {
+	background:transparent;
+	font-size:2em;
+	color:#e9ebeb;
+	margin-left:40px;
+}
+.Bottom_LLC_Outer {
+	width:100%;
+}
+.Bottom_LLC_Middle {
+	margin-left:8%;
+	margin-right:8%;
+}
+.Bottom_LLC_Text {
+	margin-top:20px;
+	margin-bottom:20px;
+	font-size:.75em;
+	float:left;
+}
+.Bottom_LLC {
+	padding-left:40px;
+	padding-right:40px;
+	width:100%;
+	opacity:0.75;
+	border-top:1px solid #e9ebeb;
+}
 #footerbottomtext {
+	padding-top:20px;
+	border-top:1px solid #30a1ad;
 	margin-bottom:2em;
 	margin-top:2em;
 }
@@ -384,6 +388,9 @@ margin:0 auto;
 .Middle_Content_Box_Text {
 	width:100%;
 	border:1px solid #30a1ad;
+}
+.Footer_Social_Container {
+	width:100%;
 }
 .form-box {
 	border-radius:0px;
@@ -403,5 +410,4 @@ margin:0 auto;
 	font-size:1em;
 	text-align:center;
 	margin-bottom:20px;
-	border-bottom:1px solid #30a1ad;
 }
