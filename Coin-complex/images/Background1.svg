@@ -24,6 +24,41 @@
 					transform:rotate(360deg);	
 				}
 			}
+			@-webkit-keyframes fadein7 {
+				from {
+					opacity:0;				}
+				to {
+					opacity:0.7;	
+				}
+			}
+			@-webkit-keyframes fadein6 {
+				from {
+					opacity:0;				}
+				to {
+					opacity:0.6;	
+				}
+			}
+			@-webkit-keyframes fadein5 {
+				from {
+					opacity:0;				}
+				to {
+					opacity:0.5;	
+				}
+			}
+			@-webkit-keyframes fadein4 {
+				from {
+					opacity:0;				}
+				to {
+					opacity:0.4;	
+				}
+			}
+			@-webkit-keyframes fadein3 {
+				from {
+					opacity:0;				}
+				to {
+					opacity:0.3;	
+				}
+			}
 			@-webkit-keyframes dash1 {
 				from {
 					transform:rotate(0deg);				}
@@ -31,6 +66,7 @@
 					transform:rotate(-360deg);	
 				}
 			}
+
 			.st1 {
 				-webkit-animation: dash1 15s linear forwards;
 				-o-animation: dash1 15s linear forwards;
@@ -98,6 +134,13 @@
 				-webkit-animation: dash 24s linear forwards;
 				-o-animation: dash 24s linear forwards;
 				animation:dash 24s linear forward;
+				animation-iteration-count: infinite;
+				transform-origin:50% 50%;
+			}	
+			.st11 {
+				-webkit-animation: dash1 25s linear forwards;
+				-o-animation: dash1 25s linear forwards;
+				animation:dash1 25s linear forward;
 				animation-iteration-count: infinite;
 				transform-origin:50% 50%;
 			}		
@@ -220,8 +263,8 @@
 	<path class="st10" d="M605.3,760.1c-17.8-28.8-32.4-60.2-43.1-93.9c-10-31.6-16-63.6-18.4-95.3l-11.2-35.3
 		c-0.5,45.1,6.2,89.9,20,133.6c14.3,45.2,35.6,87,63.3,124.6L605.3,760.1z"/>
 </g>
-<path class="st10" d="M1250.5,149.7c37.7,28.1,71.1,61.6,99.2,99.2l34.8,34.8c-20.7-34.3-45.5-66-74.1-94.7
+<path class="st11" d="M1250.5,149.7c37.7,28.1,71.1,61.6,99.2,99.2l34.8,34.8c-20.7-34.3-45.5-66-74.1-94.7
 	c-28.7-28.7-60.4-53.5-94.7-74.1C1227.3,126.5,1238.9,138.1,1250.5,149.7z"/>
-<path class="st10" d="M669.7,927.5c-37.1-27.8-70-60.8-97.8-97.8c-11.7-11.7-23.4-23.4-35.1-35.1c20.6,34.1,45.3,65.6,73.8,94.2
+<path class="st11" d="M669.7,927.5c-37.1-27.8-70-60.8-97.8-97.8c-11.7-11.7-23.4-23.4-35.1-35.1c20.6,34.1,45.3,65.6,73.8,94.2
 	c28.6,28.6,60.1,53.3,94.2,73.9L669.7,927.5z"/>
 </svg>

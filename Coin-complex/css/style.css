@@ -4,7 +4,13 @@ body, .top-content, footer
 	color: #e9ebeb;
 	font-family: 'NexaLight';
 }
-
+@-webkit-keyframes fadein {
+	from {
+		opacity:0;				}
+	to {
+		opacity:1;	
+	}
+}
 ul {
 	padding:0;
 	list-style:none;
@@ -42,28 +48,7 @@ footer {
 	padding-bottom:0;
 	background: #121517;
 }
-video {
-	position:absolute;
-	top:100;
-	opacity:0.9;
-	z-index:-1;
-	margin:0 auto;
-	display:block;
-	object-fit:cover;
-	background:#0c0c0c;
-}
-video.fillWidth {
-	min-width:300px;
-	margin-top:100px;
-	width:100%;
-	max-width:1160px;
-}
-@media only screen and (min-width:1160px) {
-	video {
-		left:50%;
-		margin-left:-580px;
-	}
-}
+
 .Linkedin {
 }
 .Instagram {
@@ -108,6 +93,7 @@ video.fillWidth {
 	width:100%;
 	margin:0 auto;
 	color:#e9ebeb;
+	border-bottom:1px solid rgba(233,235,235,0.75);
 	transition:background 0.5s;
 }
 .topbarcontent {
@@ -137,6 +123,8 @@ video.fillWidth {
 	max-width:1160px;
 	min-width:300px;
 	margin:0 auto;
+	margin-bottom:30px;
+	margin-top:30px;
 }
 
 .Top_Content_Background {
@@ -147,7 +135,10 @@ video.fillWidth {
 }
 .Top_Content_Padding {
 	width:100%;
+	height:100%;
 	max-width:1160px;
+	display:flex;
+	align-items:center;
 	margin:0 auto;
 	padding:15px;
 }
@@ -170,10 +161,13 @@ video.fillWidth {
 	flex-wrap:wrap;
 	width:100%;
 }
+.Middle_Content_Box_Background {
+	height:100%;
+}
 .Front-Page-Content {
 	width:100%;
 	height:100vh;
-	margin-bottom:30px;
+	margin-bottom:60px;
 	min-height:950px;
 	position: relative;
 	text-align:center;
@@ -181,8 +175,14 @@ video.fillWidth {
 .Three_Points_Image {
 	margin-top:15px;
 }
+.Three_Points_Image_Lock {
+	margin-top:20px;
+	margin-bottom:20px;
+}
 .Three_Points_Description {
 	margin-top:15px;
+	border-top:1px solid rgba(233,235,235,0.75);
+	padding-top:15px;
 	font-size:.75em;
 }
 .Back_Panel {
@@ -193,6 +193,8 @@ video.fillWidth {
 	margin-bottom:10px;
 	height:100%;
 	background:url("../images/Background1.svg");
+	-webkit-animation: fadein 2s linear forwards;
+	animation:fadein 2s linear forwards;
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -202,7 +204,7 @@ video.fillWidth {
 	height:500px;
 	padding:15px;
 	margin-top:10px;
-	font-size:1.25em;
+	font-size:1.5em;
 	letter-spacing:1px;
 	background:transparent;
 	margin-right:auto;
@@ -214,7 +216,7 @@ margin:0 auto;
  padding:20px;
  opacity:0;
  animation-delay:1s;
- transition:opacity 1s;
+ transition:opacity 2s;
 }
 .Middle_Content_Padding.in-view {
 width:100%;
@@ -222,7 +224,8 @@ margin:0 auto;
  padding:20px;
  opacity:1;
  animation-delay:.5s;
- transition:opacity 1s;
+ transition:opacity 2s;
+
 }
 
 
@@ -235,6 +238,7 @@ margin:0 auto;
 .Footer_Link_Container {
 	float:left;
 	line-height:40px;
+	height:40px;
 }
 .CCxLogo {
 	margin-left:auto;
@@ -243,8 +247,9 @@ margin:0 auto;
 	width:75px !important;
 }
 .CCxLogo:hover {
-    -webkit-filter: drop-shadow( 0px -5px 5px #30a1ad ); 
-            filter: drop-shadow( -0px -5px 5px #30a1ad );
+    -webkit-filter: drop-shadow( 0px 0px 5px #30a1ad ); 
+            filter: drop-shadow( -0px 0px 5px #30a1ad );
+            transition:drop-shadow 0.5s linear forwards;
 }
 .Inner-Container {
 	width:200px;
@@ -255,8 +260,18 @@ margin:0 auto;
 	margin-left:auto;
 	margin-right:auto;
 	height:auto;
-	width:125px f;
+	width:125px;
 	transition:width 0.5s;
+}
+.CCxLogoBottom {
+	margin-left:auto;
+	margin-right:auto;
+	height:auto;
+}
+.CCxLogoLarge:hover {
+    -webkit-filter: drop-shadow( 0px -0px 5px #30a1ad ); 
+            filter: drop-shadow( -0px -0px 5px #30a1ad );
+            transition:drop-shadow 0.5s linear forwards;
 }
 .CCxSubText {
 	background:url('../images/CoinComplextest.svg');
@@ -274,14 +289,23 @@ margin:0 auto;
 	font-size:48px;
 	letter-spacing:.2em;
 }
+.Sub_Logo_Image {
+	-webkit-filter: drop-shadow( 0px 0px 5px #000000 ); 
+    filter: drop-shadow( -0px 0px 5px #000000);
+}
 .Bottom_Content_Background {
-	-webkit-box-shadow: 0 0 1px 10px #000 inset;
-	-moz-box-shadow: 0 0 1px 10px #000 inset;
-	box-shadow: 0 0 1px 10px #000 inset;
+	margin-top:50px;
+	-webkit-box-shadow: 0px 10px 25px black inset;
+	-moz-box-shadow: 0px 10px 25px black inset;
+	box-shadow: 0px 10px 25px black inset;
 	background:url("../images/Manhattan.png");
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:center;
+}
+.Coin_Complex_Description {
+	font-size:1.25em;
+	letter-spacing:1px;
 }
 #newslettertop {
 	font-size:4vw;
@@ -306,13 +330,43 @@ margin:0 auto;
 	width:90%;
 	background:transparent;
 }
-.Footer_Container_Box {
+.Footer_Container_Box1 {
+	order:1;
 	min-width:300px;
 	width:33%;
 	height:100%;
 	margin-left:auto;
 	margin-right:auto;
 	margin-bottom:30px;
+}
+.Footer_Container_Box2 {
+	order:2;
+	min-width:300px;
+	width:33%;
+	height:100%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:30px;
+}
+.Footer_Container_Box3 {
+	order:3;
+	min-width:300px;
+	width:33%;
+	height:100%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:30px;
+}
+@media only screen and (max-width:900px) {
+	.Footer_Container_Box1 {
+		order:1;
+	}
+	.Footer_Container_Box2 {
+		order:3;
+	}
+	.Footer_Container_Box3 {
+		order:2;
+	}
 }
 .Footer_Container_Box a {
 	outline:0;
@@ -343,7 +397,9 @@ margin:0 auto;
 	text-decoration:none;
 }
 .Description_Container {
+	font-size:1.25em;
 	letter-spacing:1px;
+	text-shadow: 2px 2px 2px #000000;
 }
 .form-top-left {
 	width:100%;
@@ -388,6 +444,7 @@ margin:0 auto;
 	border-top: 1px solid #30a1ad;
 }
 .Bottom_LLC_Outer {
+	order:4;
 	width:100%;
 }
 .Bottom_LLC_Middle {
@@ -410,8 +467,10 @@ margin:0 auto;
 #footerbottomtext {
 	padding-top:20px;
 	border-top:1px solid #e9ebeb;
-	margin-bottom:2em;
-	margin-top:2em;
+	margin-bottom:20px;
+	margin-top:20px;
+	font-size:1em;
+	opacity:0.75;
 }
 .Footer_Container {
 	border-top:1px solid #30a1ad;
