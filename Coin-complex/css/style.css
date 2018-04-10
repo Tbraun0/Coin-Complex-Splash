@@ -1,9 +1,18 @@
 body, .top-content, footer
 {
-	background: black;
+	background:black;
 	color: #e9ebeb;
 	font-family: 'NexaLight';
 }
+/*
+body {
+	background-image:url("../images/Body_Background.jpg");
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+*/
 @-webkit-keyframes fadein {
 	from {
 		opacity:0;				}
@@ -273,6 +282,10 @@ margin:0 auto;
 	width:300px;
 	height:50px;
 }
+#Email_Container {
+	margin-right:auto;
+	margin-left:auto;
+}
 .smartertools {
 	margin-top:5%;
 	height:auto;
@@ -340,9 +353,10 @@ margin:0 auto;
 	min-width:300px;
 	width:33%;
 	height:375px;
+	display:flex;
+	align-items:center;
 	margin-left:auto;
 	margin-right:auto;
-	margin-bottom:30px;
 }
 .Footer_Container_Box2 {
 	order:2;
@@ -353,7 +367,6 @@ margin:0 auto;
 	align-items:center;
 	margin-left:auto;
 	margin-right:auto;
-	margin-bottom:30px;
 }
 .Footer_Container_Box3 {
 	order:3;
@@ -364,7 +377,6 @@ margin:0 auto;
 	margin-right:auto;
 	display:flex;
 	align-items:center;
-	margin-bottom:30px;
 }
 .Box3_Inner_Container {
 	width:100%;
@@ -516,6 +528,7 @@ margin:0 auto;
 }
 .form-box {
 	border-radius:0px;
+	margin-top:0px;
 }
 .form-bottom
 {
