@@ -4,15 +4,13 @@ body, .top-content, footer
 	color: #e9ebeb;
 	font-family: 'NexaLight';
 }
-/*
 body {
-	background-image:url("../images/Body_Background.jpg");
+	background-image:url("../images/Manhattan1.png");
 	background-position:center;
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 }
-*/
 @-webkit-keyframes fadein {
 	from {
 		opacity:0;				}
@@ -228,7 +226,6 @@ margin:0 auto;
 
 }
 #Form_Top_ID {
-	height:60px;
 	padding-top:0px;
 }
 
@@ -245,6 +242,22 @@ margin:0 auto;
 	margin-bottom:5px;
 	margin-top:5px;
 	padding-top:5px;
+}
+.CCX_Description_Header_Text {
+	text-align:left;
+	margin-left:20px;
+	font-size:1.75em;
+	font-weight:bold;
+	letter-spacing:2px;
+}
+.CCX_Description_Header_Padding {
+	width:100%;
+	padding:20px;
+	margin:0 auto;
+}
+.CCX_Description_Header_Body {
+	width:90%;
+	margin:auto;
 }
 .CCxLogo {
 	margin-left:auto;
@@ -303,19 +316,28 @@ margin:0 auto;
 	-webkit-filter: drop-shadow( 0px 0px 5px #000000 ); 
     filter: drop-shadow( -0px 0px 5px #000000);
 }
+.Full_Width_Container2 {
+	width:100%;
+	background:rgba(12,12,12,.9);
+}
 .Bottom_Content_Background {
 	margin-top:50px;
+	/*
 	-webkit-box-shadow: 0px 10px 10px black inset;
 	-moz-box-shadow: 0px 10px 10px black inset;
 	box-shadow: 0px 10px 10px black inset;
-	background:url("../images/Manhattan.png");
+	background:transparent;
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:center;
+	*/
 }
 .Coin_Complex_Description {
+	padding-top:30px;
 	font-size:1.25em;
+	opacity:0.75;
 	letter-spacing:1px;
+	text-align:left;
 }
 #newslettertop {
 	font-size:4vw;
@@ -335,11 +357,12 @@ margin:0 auto;
 	color:#e9ebeb;
 }
 .bodybox {
-	padding:1em;
+	padding:20px;
 	margin-bottom:50px;
 	margin:auto;
 	width:90%;
 	background:transparent;
+	border-top:1px solid #e9ebeb;
 }
 .Footer_Logo_row {
 	width:100%;
@@ -360,10 +383,9 @@ margin:0 auto;
 	height:375px;
 	padding-left:15px;
 	padding-right:15px;
-	display:flex;
-	align-items:center;
 	margin-left:auto;
 	margin-right:auto;
+	margin-top:70px;
 }
 .Footer_Container_Box2 {
 	order:2;
@@ -384,8 +406,7 @@ margin:0 auto;
 	padding-right:15px;
 	margin-left:auto;
 	margin-right:auto;
-	display:flex;
-	align-items:center;
+	margin-top:70px;
 }
 .Box3_Inner_Container {
 	width:100%;
@@ -518,9 +539,9 @@ margin:0 auto;
 }
 .Social_Link_Header_Text {
 	width:100%;
-	font-size:1em;
+	font-size:1.25em;
 	float:left;
-	border-bottom:1px solid #e9ebeb;
+	border-bottom:1px solid rgba(233,235,235, 0.75);
 	padding-bottom:5px;
 }
 .Social_Media_Links {
