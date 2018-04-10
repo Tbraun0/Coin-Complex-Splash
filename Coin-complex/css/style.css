@@ -24,6 +24,9 @@ p {
 	margin: 0 0 10px 0;
 	display:block;
 }
+footer a:hover, footer a:focus {
+    border-bottom: none;
+}
 hr {
 	width:70%;
 	border-color:#30A1AD;
@@ -46,18 +49,7 @@ a:hover, a:active, a:focus {
 
 footer {
 	padding-bottom:0;
-	background: #121517;
-}
-
-.Linkedin {
-}
-.Instagram {
-
-}
-.FaceBook {
-}
-.Twitter {
-
+	background: #0c0c0c;
 }
 .NavBarLink {
 	font-size:1em;
@@ -181,9 +173,8 @@ footer {
 }
 .Three_Points_Description {
 	margin-top:15px;
-	border-top:1px solid rgba(233,235,235,0.75);
-	padding-top:15px;
 	font-size:.75em;
+	opacity:0.75;
 }
 .Back_Panel {
 	position:absolute;
@@ -237,8 +228,11 @@ margin:0 auto;
 }
 .Footer_Link_Container {
 	float:left;
-	line-height:40px;
+	width:100%;
 	height:40px;
+	margin-bottom:5px;
+	margin-top:5px;
+	padding-top:5px;
 }
 .CCxLogo {
 	margin-left:auto;
@@ -253,7 +247,6 @@ margin:0 auto;
 }
 .Inner-Container {
 	width:200px;
-	height:100%;
 	margin:0 auto;
 }
 .CCxLogoLarge {
@@ -295,9 +288,9 @@ margin:0 auto;
 }
 .Bottom_Content_Background {
 	margin-top:50px;
-	-webkit-box-shadow: 0px 10px 25px black inset;
-	-moz-box-shadow: 0px 10px 25px black inset;
-	box-shadow: 0px 10px 25px black inset;
+	-webkit-box-shadow: 0px 10px 10px black inset;
+	-moz-box-shadow: 0px 10px 10px black inset;
+	box-shadow: 0px 10px 10px black inset;
 	background:url("../images/Manhattan.png");
 	background-size:cover;
 	background-repeat:no-repeat;
@@ -330,11 +323,23 @@ margin:0 auto;
 	width:90%;
 	background:transparent;
 }
+.Footer_Logo_row {
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.Footer_Container_Margin {
+	margin-left:8%;
+	margin-right:8%;
+	display:flex;
+	align-items:center;
+	flex-wrap:wrap;
+}
 .Footer_Container_Box1 {
 	order:1;
 	min-width:300px;
 	width:33%;
-	height:100%;
+	height:375px;
 	margin-left:auto;
 	margin-right:auto;
 	margin-bottom:30px;
@@ -343,7 +348,9 @@ margin:0 auto;
 	order:2;
 	min-width:300px;
 	width:33%;
-	height:100%;
+	height:375px;
+	display:flex;
+	align-items:center;
 	margin-left:auto;
 	margin-right:auto;
 	margin-bottom:30px;
@@ -352,12 +359,17 @@ margin:0 auto;
 	order:3;
 	min-width:300px;
 	width:33%;
-	height:100%;
+	height:375px;
 	margin-left:auto;
 	margin-right:auto;
+	display:flex;
+	align-items:center;
 	margin-bottom:30px;
 }
-@media only screen and (max-width:900px) {
+.Box3_Inner_Container {
+	width:100%;
+}
+@media only screen and (max-width:1072px) {
 	.Footer_Container_Box1 {
 		order:1;
 	}
@@ -386,13 +398,16 @@ margin:0 auto;
 	outline:0;
 	color:#e9ebeb;
 	text-decoration: none; /* no underline */
-	font-size:1.5em;
+	font-size:1em;
+	float:left;
 }
 .List_Link:hover {
+	color:#e9ebeb;
 	outline:0 !important;
 	text-decoration:none !important;
 }
 .List_Link a {
+	color:#e9ebeb;
 	outline:0;
 	text-decoration:none;
 }
@@ -448,8 +463,6 @@ margin:0 auto;
 	width:100%;
 }
 .Bottom_LLC_Middle {
-	margin-left:8%;
-	margin-right:8%;
 }
 .Bottom_LLC_Text {
 	margin-top:20px;
@@ -472,11 +485,27 @@ margin:0 auto;
 	font-size:1em;
 	opacity:0.75;
 }
+.Social_Icon {
+	margin-right:5px;
+}
+.Social_Link_Header {
+	width:130px;
+	margin:0 auto;
+}
+.Social_Link_Header_Text {
+	width:100%;
+	font-size:1em;
+	float:left;
+	border-bottom:1px solid #e9ebeb;
+	padding-bottom:5px;
+}
+.Social_Media_Links {
+	width:130px;
+	height:250px;
+	margin:0 auto;
+}
 .Footer_Container {
 	border-top:1px solid #30a1ad;
-	display:flex;
-	align-items:center;
-	flex-wrap:wrap;
 }
 .Middle_Content_Box_Text {
 	width:100%;
