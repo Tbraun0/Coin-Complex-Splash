@@ -227,7 +227,10 @@ margin:0 auto;
  transition:opacity 2s;
 
 }
-
+#Form_Top_ID {
+	height:60px;
+	padding-top:0px;
+}
 
 .Link_Container {
 	width:100px;
@@ -283,6 +286,7 @@ margin:0 auto;
 	height:50px;
 }
 #Email_Container {
+	padding:0px;
 	margin-right:auto;
 	margin-left:auto;
 }
@@ -326,6 +330,7 @@ margin:0 auto;
 	margin-top:0;
 }
 .signuptext {
+	text-align:center;
 	font-size:1em;
 	color:#e9ebeb;
 }
@@ -353,6 +358,8 @@ margin:0 auto;
 	min-width:300px;
 	width:33%;
 	height:375px;
+	padding-left:15px;
+	padding-right:15px;
 	display:flex;
 	align-items:center;
 	margin-left:auto;
@@ -373,6 +380,8 @@ margin:0 auto;
 	min-width:300px;
 	width:33%;
 	height:375px;
+	padding-left:15px;
+	padding-right:15px;
 	margin-left:auto;
 	margin-right:auto;
 	display:flex;
@@ -380,6 +389,7 @@ margin:0 auto;
 }
 .Box3_Inner_Container {
 	width:100%;
+	height:321px;
 }
 @media only screen and (max-width:1072px) {
 	.Footer_Container_Box1 {
@@ -454,6 +464,7 @@ margin:0 auto;
 }
 .form-top
 {
+	padding-top:15px;
 	background-color: transparent;
 	border-radius:0px;
 }
@@ -501,7 +512,8 @@ margin:0 auto;
 	margin-right:5px;
 }
 .Social_Link_Header {
-	width:130px;
+	width:100%;
+	height:36px;
 	margin:0 auto;
 }
 .Social_Link_Header_Text {
