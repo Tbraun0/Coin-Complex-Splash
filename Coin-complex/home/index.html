@@ -130,7 +130,7 @@
 
             <div class="Bottom_Content_Background">
             	<div class="Top_Content_Padding">
-            		<div class="Top_Content_Margin">
+            		<div class="Bottom_Content_Margin">
 		            	<div class="Top_Content_Inner">
 			                <div class="Inner_Container">
 			                    <p>&nbsp;</p>
@@ -141,8 +141,38 @@
 			                    <p>&nbsp;</p>
 			                    <p>&nbsp;</p>
 			                    <p>&nbsp;</p>	
-                                <input ng-model="emailsignupobj.data" type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">	   
-                                <button ng-click="submitEmail()" id = "ccbtn" class="btn">Join the queue!</button>             
+                                <div id="Queue_Numbers_Container">
+                                    <div id="Queue_Numbers_Left">
+                                        <div class="Queue_Content_Padding">
+                                            <div id="Queue_Content_Place_In_Queue">
+                                                Youre Place in the Queue
+                                            </div>
+                                            <div>
+                                                <p>&nbsp;</p>
+                                            </div>
+                                            <div id="Queue_Content_ReferalCode">
+                                                Youre Referal Code 
+                                            </div>
+                                            <div>
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="Queue_Numbers_Right">
+                                        <div class="Queue_Content_Padding">
+                                            <div id="Queue_Content_Right_Text">
+                                                Sign up with your email to be placed into the Queue. If you send your referal code to your friends you'll be bumped up!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="Queue_Signup_Container">
+                                    <input ng-model="emailsignupobj.data" type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email-Queue">	   
+                                    <button ng-click="submitEmail()" id = "ccbtn_Queue" class="btn">Join the Queue!</button>  
+                                </div>   
+                                <div id="Queue_Signup_Container">
+                                    <input ng-model="emailsignupobj.data" type="text" name="form-email" placeholder="Enter A Referal Code" class="form-email form-control" id="Queue_Referal_Code_Input">    
+                                </div>          
 			                    <p>&nbsp;</p>
 			                    <p>&nbsp;</p>
 			                    <p>&nbsp;</p>

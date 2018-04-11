@@ -155,6 +155,17 @@ footer {
 	margin-left:18%;
 	margin-right:18%;
 }
+.Bottom_Content_Margin {
+	width:82%;
+	margin-left:9%;
+	margin-right:9%;
+}
+@media only screen and (max-width:380px) {
+	.Bottom_Content_Margin {
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
 .Middle_Content_Box {
 	display:flex;
 	align-items:center;
@@ -429,6 +440,16 @@ margin:0 auto;
 		order:2;
 	}
 }
+@media only screen and (max-width:1160px) {
+	.CCX_Description_Border_Box {
+		border:none;
+	}
+}
+@media only screen and (max-width:659px) {
+	#ccbtn_Queue {
+		margin-top:10px;
+	}
+}
 .Footer_Container_Box a {
 	outline:0;
 	color:#e9ebeb;
@@ -485,6 +506,19 @@ margin:0 auto;
 	transition:background 0.5s;
 }
 #ccbtn:hover {
+	opacity:1;
+	background:#30a1ad;
+	transition:background 0.5s;
+}
+#ccbtn_Queue {
+	display:inline-block;
+	background:none;
+	border:1px solid #e9ebeb;
+	border-radius:0px;
+	color: #e9ebeb;
+	transition:background 0.5s;
+}
+#ccbtn_Queue:hover {
 	opacity:1;
 	background:#30a1ad;
 	transition:background 0.5s;
@@ -577,10 +611,71 @@ margin:0 auto;
 	background:transparent; 
 	border-radius:0px;
 }
+#Queue_Content_Place_In_Queue {
+	text-align:left;
+	font-size:1.5em;
+	letter-spacing:.1em;
+	padding:5px;
+	padding-left:10px;
+	border:1px solid #30a1ad;
+}
+#Queue_Content_ReferalCode{
+	text-align:left;
+	font-size:1.5em;
+	letter-spacing:.1em;
+	padding:5px;
+	padding-left:10px;
+	border:1px solid #30a1ad;
+}
+.Queue_Content_Padding {
+	padding:15px;
+}
+#Queue_Content_Right_Text {
+	text-align:left;
+	font-size:1.25em;
+	letter-spacing:1px;
+}
+#Queue_Numbers_Container {
+	width:100%;
+	display:flex;
+	align-items:center;
+	flex-wrap:wrap;
+	margin-bottom:20px;
+}
+#Queue_Numbers_Left {
+	box-sizing:border-box;
+	border-right:1px solid #e9ebeb;
+	min-width:300px;
+	height:200px;
+	width:50%;
+}
+#Queue_Numbers_Right {
+	box-sizing:border-box;
+	min-width:300px;
+	height:200px;
+	width:50%;
+}
+#Queue_Referal_Code_Input {
+	margin-top:15px;
+	width:80%;
+	border-radius:0px;
+	display:inline-block;
+	border:1px solid #e9ebeb;
+	background:rgba(12,12,12,0.8);
+}
 #form-email {
 	border-radius:0px;
 	border:1px solid #e9ebeb;
 	background:transparent;
+}
+#form-email-Queue {
+	display:inline-block;
+	width:70%;
+	min-width:237px;
+	max-width:600px;
+	border-radius:0px;
+	border:1px solid #e9ebeb;
+	background:rgba(12,12,12,0.8);
 }
 #Social_Text_Container {
 	width:100%;

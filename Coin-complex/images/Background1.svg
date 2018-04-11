@@ -67,7 +67,13 @@
 					transform:rotate(-360deg);	
 				}
 			}
-
+			.st0 {
+				-webkit-animation: dash 15s linear forwards;
+				-o-animation: dash 15s linear forwards;
+				animation:dash 15s linear forward;
+				animation-iteration-count: infinite;
+				transform-origin:50% 50%;
+			}
 			.st1 {
 				-webkit-animation: dash1 15s linear forwards;
 				-o-animation: dash1 15s linear forwards;
