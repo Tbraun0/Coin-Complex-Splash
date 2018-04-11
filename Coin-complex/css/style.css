@@ -92,7 +92,7 @@ footer {
 	width:100%;
 	margin:0 auto;
 	color:#e9ebeb;
-	border-bottom:1px solid rgba(233,235,235,0.75);
+	border-bottom:1px solid #30a1ad;
 	transition:background 0.5s;
 }
 .topbarcontent {
@@ -151,6 +151,7 @@ footer {
 	font-family: 'NexaLight';
 }
 .Top_Content_Margin {
+	width:64%;
 	margin-left:18%;
 	margin-right:18%;
 }
@@ -242,6 +243,11 @@ margin:0 auto;
 	margin-bottom:5px;
 	margin-top:5px;
 	padding-top:5px;
+}
+.CCX_Description_Border_Box {
+	box-sizing:border-box;
+	border-left:1px solid #e9ebeb;
+	border-right:1px solid #e9ebeb;
 }
 .CCX_Description_Header_Text {
 	text-align:left;
@@ -548,6 +554,7 @@ margin:0 auto;
 	width:130px;
 	height:250px;
 	margin:0 auto;
+	margin-top:10px;
 }
 .Footer_Container {
 	border-top:1px solid #30a1ad;
@@ -555,6 +562,8 @@ margin:0 auto;
 .Middle_Content_Box_Text {
 	width:100%;
 	border:1px solid #30a1ad;
+	padding:5px;
+	background:#0c0c0c;
 }
 .Footer_Social_Container {
 	width:100%;
