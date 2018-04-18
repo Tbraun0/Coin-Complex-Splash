@@ -225,7 +225,7 @@ footer {
 .Three_Points_Description {
 	margin-top:15px;
 	font-size:.75em;
-	opacity:0.75;
+	opacity:0.9;
 	text-shadow:2px 2px 2px #000000;
 }
 .Back_Panel {
@@ -440,7 +440,7 @@ margin:0 auto;
 .Footer_Container_Box2 {
 	order:2;
 	min-width:280px;
-	width:33%;
+	width:50%;
 	height:375px;
 	display:flex;
 	align-items:center;
@@ -450,7 +450,7 @@ margin:0 auto;
 .Footer_Container_Box3 {
 	order:3;
 	min-width:280px;
-	width:33%;
+	width:50%;
 	height:375px;
 	padding-left:15px;
 	padding-right:15px;
@@ -476,18 +476,6 @@ margin:0 auto;
 	letter-spacing:2px;
 	margin-left:auto;
 	margin-right:auto;
-}
-@media only screen and (max-width:1000px) {
-	.Footer_Container_Box1 {
-		order:1;
-	}
-	.Footer_Container_Box2 {
-		height:270px;
-		order:3;
-	}
-	.Footer_Container_Box3 {
-		order:2;
-	}
 }
 @media only screen and (max-width:666px) {
 	.Footer_Container_Box1 {	
