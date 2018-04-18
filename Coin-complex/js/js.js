@@ -58,6 +58,8 @@ function($scope, $http, $sce)
 			resultContainerQueue.textContent = "You are " + (numinQ+1) +" in line!";
 			ReferralCodeContainer.textContent = data.newcode;
         	//ccbtn.className += " hidden";
+			const NumInQueueContainer = document.getElementById("How_Many_People");
+			NumInQueueContainer.textContent = (numinQ + 1) + " People in Line";
 		})
 		.error(function(data)
 		{

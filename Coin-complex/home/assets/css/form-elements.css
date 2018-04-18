@@ -1,6 +1,7 @@
 
 input[type="text"], 
 input[type="password"], 
+input[type="email"],
 textarea, 
 textarea.form-control {
 	height: 50px;
@@ -67,8 +68,8 @@ button.btn {
 
 button.btn:hover { opacity: 0.6; color: #fff; }
 
-button.btn:active { outline: 0; opacity: 0.6; color: #fff; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+button.btn:active { outline: 0; color: #fff; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 
-button.btn:focus { outline: 0; opacity: 0.6; background: #19b9e7; color: #fff; }
+button.btn:focus { outline: 0; background: #19b9e7; color: #fff; }
 
-button.btn:active:focus, button.btn.active:focus { outline: 0; opacity: 0.6; background: #19b9e7; color: #fff; }
+button.btn:active:focus, button.btn.active:focus { outline: 0; background: #19b9e7; color: #fff; }
