@@ -11,32 +11,32 @@ $.get("http://api.williamdunkerley.com/coin-complex/queue/count")
 });
 
 
-ccapp.controller("EmailSignupController", ['$scope', '$http', '$sce', 
-function($scope, $http, $sce)
-{
-	$scope.emailsignupobj= {data:""};
+// ccapp.controller("EmailSignupController", ['$scope', '$http', '$sce', 
+// function($scope, $http, $sce)
+// {
+// 	$scope.emailsignupobj= {data:""};
 
-	$scope.submitEmail = function()
-	{
-		$http.get("http://api.williamdunkerley.com/coin-complex/" + $scope.emailsignupobj.data)
-		.success(function(data)
-		{
-			const resultContainer = document.getElementById("result-container");
-			const ccbtn = document.getElementById("ccbtn");
-    		const resultTextElement = resultContainer.getElementsByClassName(
-      			"text-goes-here"
-    		)[0];
-			console.log("success");
-			resultTextElement.textContent = "Thanks! We'll get back to you!";
-        	resultContainer.classList.remove("hidden");
-        	ccbtn.className += " hidden";
-		})
-		.error(function(data)
-		{
-			console.log(data)
-		});
-	}
-}]);
+// 	$scope.submitEmail = function()
+// 	{
+// 		$http.get("http://api.williamdunkerley.com/coin-complex/" + $scope.emailsignupobj.data)
+// 		.success(function(data)
+// 		{
+// 			const resultContainer = document.getElementById("result-container");
+// 			const ccbtn = document.getElementById("ccbtn");
+//     		const resultTextElement = resultContainer.getElementsByClassName(
+//       			"text-goes-here"
+//     		)[0];
+// 			console.log("success");
+// 			resultTextElement.textContent = "Thanks! We'll get back to you!";
+//         	resultContainer.classList.remove("hidden");
+//         	ccbtn.className += " hidden";
+// 		})
+// 		.error(function(data)
+// 		{
+// 			console.log(data)
+// 		});
+// 	}
+// }]);
 
 ccapp.controller("QueueSignupController", ['$scope', '$http', '$sce', 
 function($scope, $http, $sce)
