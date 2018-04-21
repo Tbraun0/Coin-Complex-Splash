@@ -98,7 +98,26 @@ function check_if_in_view() {
   });
 }
 
-
+$("#click1").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#Content_1").offset().top
+    }, 1000);
+});
+$("#click2").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#Content_2").offset().top
+    }, 1000);
+});
+$("#click3").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#Content_3").offset().top
+    }, 1000);
+});
+$("#click4").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#Content_4").offset().top
+    }, 1000);
+});
 
 var scrollTop = 0;
 $(window).scroll(function(){

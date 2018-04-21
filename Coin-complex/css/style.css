@@ -6,11 +6,12 @@ body, .top-content, footer
 }
 body {
 	background-image:url("../images/ManhattanBig.jpg");
-	background-position:center;
+	background-position:50%;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size:cover;
+	height:100vh;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 }
@@ -29,6 +30,7 @@ ul {
     font-family: NexaLight;
     src: url('../images/AvenirLTStd-Light.otf');
 }
+button:focus {outline:0;}
 p {
 	color: #e9ebeb;
 	margin: 0 0 10px 0;
@@ -98,6 +100,39 @@ footer {
 	border-bottom:1px solid #30a1ad;
 	transition:background 0.5s;
 }
+.Top_Bar_Link_Container {
+	margin-left:auto;
+	margin-right:auto;
+	width:35%;
+	display:flex;
+	align-items:center;
+	flex-wrap:wrap;
+}
+.Top_Bar_Button {
+	width:100px;
+	height:40px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5px;
+	margin-bottom:5px;
+	display:inline-block;
+	background:transparent;
+	color:#e9ebeb;
+	border:1px solid #30a1ad;
+	transition:background .3s linear, color .3s linear;
+}
+.Top_Bar_Button:hover {
+	width:100px;
+	height:40px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5px;
+	margin-bottom:5px;
+	display:inline-block;
+	background:#30a1ad;
+	color:#0c0c0c;
+	transition:background .3s linear, color .3s linear;
+}
 .topbarcontent {
 	padding-top:10px !important;
 	padding-bottom:10px !important;
@@ -107,9 +142,8 @@ footer {
 	display:flex;
 	align-items:center;
 	margin:auto;
-	width:50%;
-	max-width:400px;
-	min-width:300px;
+	max-width:650px;
+	min-width:320px;
 	padding-top:35px;
 	padding-bottom:35px;
 	transition:padding 0.5s;
@@ -129,6 +163,12 @@ footer {
 	margin-top:30px;
 }
 .Max-Width-container-2 {
+	width:100%;
+	max-width:1160px;
+	min-width:300px;
+	margin:0 auto;
+}
+.Max-Width-container-3 {
 	width:100%;
 	max-width:1160px;
 	min-width:300px;
@@ -212,11 +252,19 @@ footer {
 }
 .Three_Points_Image {
 	margin-top:15px;
+    -webkit-filter: drop-shadow( 0px 0px 5px #000000 ); 
+            filter: drop-shadow( -0px 0px 5px #000000 );
 }
 .Full_Width_Container_Border {
 	height:35px;
 	border-top:1px solid #282b2d;
 	border-bottom:1px solid #282b2d;
+}
+.Full_Width_Container_Border_Color {
+	height:35px;
+	border-top:1px solid #282b2d;
+	border-bottom:1px solid #282b2d;
+	background:rgba(12,12,12,.9);
 }
 .Three_Points_Image_Lock {
 	margin-top:20px;
@@ -299,6 +347,7 @@ margin:0 auto;
 	font-size:1.75em;
 	font-weight:bold;
 	letter-spacing:2px;
+	text-shadow: 2px 2px 2px #000000;
 }
 .CCX_Description_Header_Padding {
 	width:100%;
@@ -370,6 +419,26 @@ margin:0 auto;
 	width:100%;
 	background:rgba(12,12,12,.9);
 }
+.Full_Width_Container3 {
+	width:100%;
+}
+.P_No_Margin {
+	height:40px;
+	margin-bottom:0px;
+}
+.Full_Width_Container2_Background {
+	width:100%;
+	background:url("../images/ScreenshotTest1.png");
+	background-position:center right;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+.Full_Width_Container3_Inner {
+	width:100%;
+	display:flex;
+	align-items:center;
+	flex-wrap:wrap;
+}
 .Bottom_Content_Background {
 	margin-top:50px;
 	/*
@@ -388,6 +457,7 @@ margin:0 auto;
 	opacity:0.75;
 	letter-spacing:1px;
 	text-align:left;
+	text-shadow: 2px 2px 2px #000000;
 }
 #newslettertop {
 	font-size:4vw;
