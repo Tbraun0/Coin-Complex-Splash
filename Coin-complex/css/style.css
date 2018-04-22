@@ -349,6 +349,14 @@ margin:0 auto;
 	letter-spacing:2px;
 	text-shadow: 2px 2px 2px #000000;
 }
+.CCX_Description_Header_Text_2 {
+	text-align:right;
+	margin-left:20px;
+	font-size:1.75em;
+	font-weight:bold;
+	letter-spacing:2px;
+	text-shadow: 2px 2px 2px #000000;
+}
 .CCX_Description_Header_Padding {
 	width:100%;
 	padding:20px;
@@ -433,6 +441,13 @@ margin:0 auto;
 	background-size:cover;
 	background-repeat:no-repeat;
 }
+.Full_Width_Container3_Background {
+	width:100%;
+	background:url("../images/Portfolio.png");
+	background-position:center left;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
 .Full_Width_Container3_Inner {
 	width:100%;
 	display:flex;
@@ -457,6 +472,14 @@ margin:0 auto;
 	opacity:0.75;
 	letter-spacing:1px;
 	text-align:left;
+	text-shadow: 2px 2px 2px #000000;
+}
+.Coin_Complex_Description_2 {
+	padding-top:30px;
+	font-size:1.25em;
+	opacity:0.75;
+	letter-spacing:1px;
+	text-align:right;
 	text-shadow: 2px 2px 2px #000000;
 }
 #newslettertop {

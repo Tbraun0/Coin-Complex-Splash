@@ -100,22 +100,22 @@ function check_if_in_view() {
 
 $("#click1").click(function() {
     $('html, body').animate({
-        scrollTop: $("#Content_1").offset().top
+        scrollTop: $("#Content_1").offset().top - 50
     }, 1000);
 });
 $("#click2").click(function() {
     $('html, body').animate({
-        scrollTop: $("#Content_2").offset().top
+        scrollTop: $("#Content_2").offset().top - 110
     }, 1000);
 });
 $("#click3").click(function() {
     $('html, body').animate({
-        scrollTop: $("#Content_3").offset().top
+        scrollTop: $("#Content_3").offset().top - 110
     }, 1000);
 });
 $("#click4").click(function() {
     $('html, body').animate({
-        scrollTop: $("#Content_4").offset().top
+        scrollTop: $("#Content_4").offset().top + 180
     }, 1000);
 });
 
