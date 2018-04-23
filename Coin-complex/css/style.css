@@ -437,14 +437,14 @@ margin:0 auto;
 .Full_Width_Container2_Background {
 	width:100%;
 	background:url("../images/ScreenshotTest1.png");
-	background-position:center right;
+	background-position:center;
 	background-size:cover;
 	background-repeat:no-repeat;
 }
 .Full_Width_Container3_Background {
 	width:100%;
 	background:url("../images/Portfolio.png");
-	background-position:center left;
+	background-position:center;
 	background-size:cover;
 	background-repeat:no-repeat;
 }
@@ -469,7 +469,7 @@ margin:0 auto;
 .Coin_Complex_Description {
 	padding-top:30px;
 	font-size:1.25em;
-	opacity:0.75;
+	opacity:0.9;
 	letter-spacing:1px;
 	text-align:left;
 	text-shadow: 2px 2px 2px #000000;
@@ -477,7 +477,7 @@ margin:0 auto;
 .Coin_Complex_Description_2 {
 	padding-top:30px;
 	font-size:1.25em;
-	opacity:0.75;
+	opacity:0.9;
 	letter-spacing:1px;
 	text-align:right;
 	text-shadow: 2px 2px 2px #000000;
