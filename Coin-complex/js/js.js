@@ -4,7 +4,7 @@ var numinQ = 0;
 $.get("http://api.williamdunkerley.com/coin-complex/queue/count")
 .success(function(data) {
 	const NumInQueueContainer = document.getElementById("How_Many_People");
-	NumInQueueContainer.textContent = data.numinqueue + " People in Line";
+	NumInQueueContainer.textContent = "People In Line: " + data.numinqueue;
 	numinQ = data.numinqueue;
 }).error(function(data) {
 	console.log(data)
@@ -59,7 +59,7 @@ function($scope, $http, $sce)
 			ReferralCodeContainer.textContent = data.newcode;
         	//ccbtn.className += " hidden";
 			const NumInQueueContainer = document.getElementById("How_Many_People");
-			NumInQueueContainer.textContent = (numinQ + 1) + " People in Line";
+			NumInQueueContainer.textContent = "People In Line: " + (numinQ + 1) ;
 		})
 		.error(function(data)
 		{

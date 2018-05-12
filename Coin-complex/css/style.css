@@ -97,7 +97,6 @@ footer {
 	width:100%;
 	margin:0 auto;
 	color:#e9ebeb;
-	border-bottom:1px solid #30a1ad;
 	transition:background 0.5s;
 }
 .Top_Bar_Link_Container {
@@ -113,13 +112,29 @@ footer {
 	height:40px;
 	margin-left:auto;
 	margin-right:auto;
+	font-size:.9em;
 	margin-top:5px;
 	margin-bottom:5px;
-	display:inline-block;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	letter-spacing:2px;
+	padding-top:3px;
 	background:transparent;
 	color:#e9ebeb;
 	border:1px solid #30a1ad;
 	transition:background .3s linear, color .3s linear;
+}
+.Footer_Container_Contact_Padding {
+	width:100%;
+	padding:20px;
+	padding-top:50px;
+	padding-bottom:50px;
+}
+.Footer_Container_Contact_Flex {
+	display:flex;
+	align-items:center;
+	justify-content:left;
 }
 .Top_Bar_Button:hover {
 	width:100px;
@@ -159,8 +174,10 @@ footer {
 	max-width:1160px;
 	min-width:300px;
 	margin:0 auto;
-	margin-bottom:30px;
 	margin-top:30px;
+}
+.Full_Width_Black {
+
 }
 .Max-Width-container-2 {
 	width:100%;
@@ -169,6 +186,12 @@ footer {
 	margin:0 auto;
 }
 .Max-Width-container-3 {
+	width:100%;
+	max-width:1160px;
+	min-width:300px;
+	margin:0 auto;
+}
+.Max-Width-container-4 {
 	width:100%;
 	max-width:1160px;
 	min-width:300px;
@@ -191,30 +214,34 @@ footer {
 	padding:15px;
 }
 #Queue_Numbers_Container_Padding {
-	padding:10px;
-	border:1px solid #e9ebeb;
+	padding:20px;
+	border:1px solid #282b2d;
 	margin-bottom:50px;
 	background: rgba(12,12,12,0.8)
+}
+#Queue_Numbers_Container_Padding_2 {
+	border:1px solid #282b2b;
+	padding:10px;
 }
 .Margin {
 	margin-left:auto;
 	margin-right:auto;
 }
 .What_We_Offer {
-	font-size:2em;
+	font-size:1.5em;
 	letter-spacing:5px;
 	font-family: 'NexaLight';
 }
 .Youre_Place_In_Queue {
 	margin-top:10px;
 	margin-bottom:10px;
-	font-size:1.5em;
+	font-size:1.25em;
 	text-align:center;
 }
 .Your_Referral_Code {
 	margin-top:10px;
 	margin-bottom:10px;
-	font-size:1.5em;
+	font-size:1.25em;
 	text-align:center;	
 }
 .Top_Content_Margin {
@@ -259,6 +286,12 @@ footer {
 	height:35px;
 	border-top:1px solid #282b2d;
 	border-bottom:1px solid #282b2d;
+	background:rgba(0,0,0,.95);
+}
+.Full_Width_Container_Border_Black {
+	height:35px;
+	border-top:1px solid #282b2d;
+	border-bottom:1px solid #282b2d;
 }
 .Full_Width_Container_Border_Color {
 	height:35px;
@@ -295,7 +328,7 @@ footer {
 	height:500px;
 	padding:15px;
 	margin-top:10px;
-	font-size:1.5em;
+	font-size:1.25em;
 	letter-spacing:1px;
 	background:transparent;
 	margin-right:auto;
@@ -336,23 +369,28 @@ margin:0 auto;
 	margin-top:5px;
 	padding-top:5px;
 }
+.Footer_Link_Container1 {
+	height:40px;
+	margin-left:10px;
+}
+.Footer_Link_Container_Text {
+	font-size:1.25em;
+	height:40px;
+}
 .CCX_Description_Border_Box {
 	box-sizing:border-box;
-	border-left:1px solid #e9ebeb;
-	border-right:1px solid #e9ebeb;
 }
 .CCX_Description_Header_Text {
 	text-align:left;
 	margin-left:20px;
-	font-size:1.75em;
-	font-weight:bold;
-	letter-spacing:2px;
+	font-size:1.5em;
+	letter-spacing:5px;
 	text-shadow: 2px 2px 2px #000000;
 }
 .CCX_Description_Header_Text_2 {
 	text-align:right;
 	margin-left:20px;
-	font-size:1.75em;
+	font-size:1.5em;
 	font-weight:bold;
 	letter-spacing:2px;
 	text-shadow: 2px 2px 2px #000000;
@@ -420,12 +458,29 @@ margin:0 auto;
 	letter-spacing:.2em;
 }
 .Sub_Logo_Image {
-	-webkit-filter: drop-shadow( 0px 0px 5px #000000 ); 
-    filter: drop-shadow( -0px 0px 5px #000000);
+    background:rgb(0,0,0,0.5);
+}
+.Full_Width_Container {
+	width:100%;
+	background:rgba(0,0,0,.7);
 }
 .Full_Width_Container2 {
 	width:100%;
 	background:rgba(12,12,12,.9);
+}
+.Full_Width_Container3 {
+	width:100%;
+	background:rgba(0,0,0,.7);
+}
+.RoadMap_Row_Top {
+	width:100%;
+	padding:20px;
+	border-left:1px solid #e9ebeb;
+}
+.RoadMap_Row_Padding {
+	padding:20px;
+	width:100%;
+	border-bottom:1px solid #e9ebeb;
 }
 .Full_Width_Container3 {
 	width:100%;
@@ -443,10 +498,6 @@ margin:0 auto;
 }
 .Full_Width_Container3_Background {
 	width:100%;
-	background:url("../images/Portfolio.png");
-	background-position:center;
-	background-size:cover;
-	background-repeat:no-repeat;
 }
 .Full_Width_Container3_Inner {
 	width:100%;
@@ -468,7 +519,7 @@ margin:0 auto;
 }
 .Coin_Complex_Description {
 	padding-top:30px;
-	font-size:1.25em;
+	font-size:1em;
 	opacity:0.9;
 	letter-spacing:1px;
 	text-align:left;
@@ -476,7 +527,7 @@ margin:0 auto;
 }
 .Coin_Complex_Description_2 {
 	padding-top:30px;
-	font-size:1.25em;
+	font-size:1em;
 	opacity:0.9;
 	letter-spacing:1px;
 	text-align:right;
@@ -496,7 +547,7 @@ margin:0 auto;
 }
 .signuptext {
 	text-align:center;
-	font-size:1em;
+	font-size:.75em;
 	color:#e9ebeb;
 }
 .bodybox {
@@ -519,32 +570,11 @@ margin:0 auto;
 	align-items:center;
 	flex-wrap:wrap;
 }
-.Footer_Container_Box1 {
-	order:1;
-	min-width:280px;
-	width:33%;
-	height:375px;
-	padding-left:15px;
-	padding-right:15px;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:70px;
-}
-.Footer_Container_Box2 {
-	order:2;
-	min-width:280px;
-	width:50%;
-	height:375px;
-	display:flex;
-	align-items:center;
-	margin-left:auto;
-	margin-right:auto;
-}
 .Footer_Container_Box3 {
 	order:3;
 	min-width:280px;
-	width:50%;
-	height:375px;
+	width:100%;
+	height:350px;
 	padding-left:15px;
 	padding-right:15px;
 	margin-left:auto;
@@ -560,13 +590,19 @@ margin:0 auto;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    padding-top:25px;
+    padding-bottom:25px;
+    background:rgba(0,0,0,0.95);
+    border:1px solid #30a1ad;
 }
 #How_Many_People {
-	font-size:4em;
+font-family: 'NexaLight';
+font-weight:lighter;
+	font-size:2em;
+	color:#e9ebeb;
 	line-height:1em;
 	text-align:center;
-	letter-spacing:2px;
+	letter-spacing:6px;
 	margin-left:auto;
 	margin-right:auto;
 }
@@ -589,6 +625,9 @@ margin:0 auto;
 	#ccbtn_Queue {
 		margin-top:10px;
 	}
+	#Queue_Referal_Code_Input {
+		margin-top:0px;
+	}
 }
 .Footer_Container_Box a {
 	outline:0;
@@ -608,7 +647,7 @@ margin:0 auto;
 	outline:0;
 	color:#e9ebeb;
 	text-decoration: none; /* no underline */
-	font-size:1.2em;
+	font-size:1em;
 	float:left;
 }
 .List_Link:hover {
@@ -622,7 +661,7 @@ margin:0 auto;
 	text-decoration:none;
 }
 .Description_Container {
-	font-size:1.25em;
+	font-size:1em;
 	letter-spacing:1px;
 	text-shadow: 2px 2px 2px #000000;
 }
@@ -652,8 +691,8 @@ margin:0 auto;
 }
 #ccbtn_Queue {
 	display:inline-block;
-	background:none;
-	border:1px solid #e9ebeb;
+	background:rgb(0,0,0,.9);
+	border:1px solid #282b2d;
 	border-radius:0px;
 	color: #e9ebeb;
 	transition:background 0.5s;
@@ -661,6 +700,7 @@ margin:0 auto;
 #ccbtn_Queue:hover {
 	opacity:1;
 	background:#30a1ad;
+	color:#0c0c0c;
 	transition:background 0.5s;
 }
 .form-top
@@ -706,7 +746,7 @@ margin:0 auto;
 	border-top:1px solid #e9ebeb;
 	margin-bottom:20px;
 	margin-top:20px;
-	font-size:1em;
+	font-size:.75em;
 	opacity:0.75;
 }
 .Social_Icon {
@@ -719,7 +759,7 @@ margin:0 auto;
 }
 .Social_Link_Header_Text {
 	width:100%;
-	font-size:1.5em;
+	font-size:1.25em;
 	float:left;
 	padding-bottom:5px;
 }
@@ -730,13 +770,11 @@ margin:0 auto;
 	margin-top:10px;
 }
 .Footer_Container {
-	border-top:1px solid #30a1ad;
 }
 .Middle_Content_Box_Text {
 	width:100%;
 	border:1px solid #30a1ad;
 	padding:5px;
-	background:#0c0c0c;
 }
 .Footer_Social_Container {
 	width:100%;
@@ -752,28 +790,26 @@ margin:0 auto;
 }
 #Queue_Content_Place_In_Queue {
 	text-align:left;
-	font-size:1.5em;
+	font-size:1.25em;
 	letter-spacing:.1em;
 	padding:5px;
 	padding-left:10px;
-	background:#0c0c0c;
-	border:1px solid #30a1ad;
+	border-bottom:1px solid #e9ebeb;
 }
 #Queue_Content_ReferalCode{
 	text-align:left;
-	font-size:1.5em;
+	font-size:1.25em;
 	letter-spacing:.1em;
 	padding:5px;
 	padding-left:10px;
-	background:#0c0c0c;
-	border:1px solid #30a1ad;
+	border-bottom:1px solid #e9ebeb;
 }
 .Queue_Content_Padding {
 	padding:15px;
 }
 #Queue_Content_Right_Text {
 	text-align:left;
-	font-size:1.25em;
+	font-size:1em;
 	letter-spacing:1px;
 }
 #Queue_Numbers_Container {
@@ -790,11 +826,18 @@ margin:0 auto;
 	margin-right:auto;
 	width:50%;
 }
+#Queue_People_Padding {
+	border:1px solid #282b2d;
+	padding:15px;
+    margin-bottom: 50px;
+    background:rgba(12,12,12,0.8);
+}
 #Queue_Numbers_Right {
 	box-sizing:border-box;
 	min-width:210px;
 	margin-left:auto;
 	margin-right:auto;
+	opacity:0.9;
 	width:50%;
 }
 #Queue_Referal_Code_Input {
@@ -803,7 +846,7 @@ margin:0 auto;
 	border-radius:0px;
 	display:inline-block;
 	color:#e9ebeb;
-	border:1px solid #e9ebeb;
+	border:1px solid #282b2d;
 	background:rgba(12,12,12,0.8);
 }
 #form-email {
@@ -846,18 +889,88 @@ margin:0 auto;
 	color:#e9ebeb;
 	max-width:600px;
 	border-radius:0px;
-	border:1px solid #e9ebeb;
+	border:1px solid #282b2d;
 	background:rgba(12,12,12,0.8);
 }
 #Social_Text_Container {
 	width:100%;
-	font-size:1em;
+	font-size:.75em;
 	text-align:center;
 	margin-bottom:20px;
+}
+#Queue_Big_Container {
+	background:rgba(12,12,12,.9);
+	border:1px solid #282b2d;
+	padding-top:50px;
+	padding-bottom:50px;
+	padding:25px;
+}
+.RoadMap_Full_Container_Flex {
+	display:flex;
+	align-items:top;
+	flex-wrap:wrap;
+	width:100%;
+}
+.RoadMap_Half_Container {
+	width:50%;
+	padding:20px;
+	min-width:320px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.RoadMap_Half_Container_Title_Border {
+	text-align:center;
+	font-size:1.25em;
+	letter-spacing:2px;
+	width:70%;
+	margin:auto;
+	padding:5px;
+	margin-bottom:10px;
+	border:1px solid #30a1ad;
+}
+.RoadMap_Half_Container_Content {
+	width:100%;
+}
+.RoadMap_Half_Container_Padding {
+	padding-left:20px;
+	padding-right:20px;
+}
+.RoadMap_Content_Container {
+	width:100%;
+	padding:10px;
+}
+.RoadMap_Content_Container_Title {
+	font-size:1.15em;
+	text-align:left;
+	letter-spacing:1px;
+	padding-left:10px;
+	padding-bottom:10px;
+	border-bottom:1px solid #e9ebeb;
+	border-left:1px solid #e9ebeb;
+}
+.RoadMap_Content_Container_Content {
+	font-size:.9em;
+	opacity:0.9;
+	letter-spacing:1px;
+	text-align:left;
+	padding-left:10px;
+	padding-top:10px;
+	border-left:1px solid #e9ebeb;
+	padding-bottom:40px;
+}
+.RoadMap_Half_Container_Title {
+	width:100%;
+	padding:5px;
+	margin-bottom:10px;
 }
 @media only screen and (max-width:615px) {
 	#Queue_Numbers_Left {
 		border-right:none;
+	}
+}
+@media only screen and (max-width:639px) {
+	.RoadMap_Half_Container {
+		width:100%;
 	}
 }
 input {
