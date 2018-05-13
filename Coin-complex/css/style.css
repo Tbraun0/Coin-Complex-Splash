@@ -705,7 +705,7 @@ font-weight:lighter;
 	text-decoration:none;
 }
 .Description_Container {
-	font-size:1em;
+	font-size:1.1em;
 	letter-spacing:1px;
 	text-shadow: 2px 2px 2px #000000;
 }
@@ -1042,6 +1042,19 @@ font-weight:lighter;
 	border-bottom:1px solid #e9ebeb;
 	border-left:1px solid #e9ebeb;
 	background:url('../images/LoadingBar1.svg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.RoadMap_Content_Container_Title_Bar2 {
+	font-size:1.15em;
+	text-align:left;
+	letter-spacing:1px;
+	padding-left:10px;
+	padding-bottom:10px;
+	border-bottom:1px solid #e9ebeb;
+	border-left:1px solid #e9ebeb;
+	background:url('../images/LoadingBar2.svg');
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:center;
