@@ -174,7 +174,8 @@ footer {
 	max-width:1160px;
 	min-width:300px;
 	margin:0 auto;
-	margin-top:30px;
+	display:flex;
+	align-items:center;
 }
 .Full_Width_Black {
 
@@ -231,6 +232,51 @@ footer {
 	font-size:1.5em;
 	letter-spacing:5px;
 	font-family: 'NexaLight';
+}
+.Full_Width_Container_Titles {
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	border-top:1px solid #11747f;
+	border-bottom:1px solid #11747f;
+	background:rgb(0,0,0,.95);
+}
+.Max_Width_Box {
+	width:300px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+.Full_Width_Container_Content {
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.Max_Width_Boxes {
+	width:100%;
+	max-width:1160px;
+	display:flex;
+	align-items:top;
+}
+.Max_Width_Titles {
+	width:100%;
+	max-width:1160px;
+	display:flex;
+	align-items:center;
+}
+.Max_Width_Title {
+	width:300px;
+	font-size:1.25em;
+	padding:2px;
+	color:#e9ebeb;
+	text-align:center;
+	letter-spacing:2px;
+	margin-left:auto;
+	margin-right:auto;
+	border-left:1px solid #11747f;
+	border-right:1px solid #11747f;
 }
 .Youre_Place_In_Queue {
 	margin-top:10px;
@@ -325,8 +371,8 @@ footer {
 }
 .Middle_Content_Box_Content {
 	width:300px;
-	height:500px;
 	padding:15px;
+	padding-bottom:30px;
 	margin-top:10px;
 	font-size:1.25em;
 	letter-spacing:1px;
@@ -334,10 +380,17 @@ footer {
 	margin-right:auto;
 	margin-left:auto;
 }
+.Middle_Content_Box_Box {
+	width:33.33%;
+	padding:15px;
+	background:transparent;
+	display:flex;
+	align-items:top;
+	min-width:300px;
+}
 .Middle_Content_Padding {
 width:100%;
 margin:0 auto;
- padding:20px;
  opacity:0;
  animation-delay:1s;
  transition:opacity 2s;
@@ -345,7 +398,6 @@ margin:0 auto;
 .Middle_Content_Padding.in-view {
 width:100%;
 margin:0 auto;
- padding:20px;
  opacity:1;
  animation-delay:.5s;
  transition:opacity 2s;
@@ -621,14 +673,6 @@ font-weight:lighter;
 		border:none;
 	}
 }
-@media only screen and (max-width:659px) {
-	#ccbtn_Queue {
-		margin-top:10px;
-	}
-	#Queue_Referal_Code_Input {
-		margin-top:0px;
-	}
-}
 .Footer_Container_Box a {
 	outline:0;
 	color:#e9ebeb;
@@ -771,10 +815,22 @@ font-weight:lighter;
 }
 .Footer_Container {
 }
-.Middle_Content_Box_Text {
+.Middle_Content_Box_Border {
 	width:100%;
-	border:1px solid #30a1ad;
-	padding:5px;
+	border-top:1px solid #11747f;
+	border-bottom:1px solid #11747f;
+	background:rgb(0,0,0,.95);
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.Middle_Content_Box_Text {
+	padding:2px;
+	border-left:1px solid #11747f;
+	border-right:1px solid #11747f;
+	font-size:1.25em;
+	text-align:center;
+	width:300px;
 }
 .Footer_Social_Container {
 	width:100%;
@@ -913,7 +969,8 @@ font-weight:lighter;
 }
 .RoadMap_Half_Container {
 	width:50%;
-	padding:20px;
+	padding-left:20px;
+	padding-right:20px;
 	min-width:320px;
 	margin-left:auto;
 	margin-right:auto;
@@ -922,11 +979,11 @@ font-weight:lighter;
 	text-align:center;
 	font-size:1.25em;
 	letter-spacing:2px;
-	width:70%;
+	width:300px;
 	margin:auto;
-	padding:5px;
-	margin-bottom:10px;
-	border:1px solid #30a1ad;
+	padding:2px;
+	border-left:1px solid #11747f;
+	border-right:1px solid #11747f;
 }
 .RoadMap_Half_Container_Content {
 	width:100%;
@@ -935,9 +992,37 @@ font-weight:lighter;
 	padding-left:20px;
 	padding-right:20px;
 }
+.Full_Width_Container_RoadMap_Titles {
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	border-top:1px solid #11747f;
+	border-bottom:1px solid #11747f;
+	background:rgb(0,0,0,.95);	
+	margin-bottom:30px;
+}
+.Max_Width_Titles_RoadMap {
+	width:100%;
+	max-width:1160px;
+	display:flex;
+	align-items:center;
+}
 .RoadMap_Content_Container {
 	width:100%;
 	padding:10px;
+}
+.Max_Width_Title_RoadMap {
+	width:300px;
+	font-size:1.25em;
+	letter-spacing:2px;
+	padding:2px;
+	color:#e9ebeb;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	border-left:1px solid #11747f;
+	border-right:1px solid #11747f;
 }
 .RoadMap_Content_Container_Title {
 	font-size:1.15em;
@@ -947,6 +1032,19 @@ font-weight:lighter;
 	padding-bottom:10px;
 	border-bottom:1px solid #e9ebeb;
 	border-left:1px solid #e9ebeb;
+}
+.RoadMap_Content_Container_Title_Bar1 {
+	font-size:1.15em;
+	text-align:left;
+	letter-spacing:1px;
+	padding-left:10px;
+	padding-bottom:10px;
+	border-bottom:1px solid #e9ebeb;
+	border-left:1px solid #e9ebeb;
+	background:url('../images/LoadingBar1.svg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
 }
 .RoadMap_Content_Container_Content {
 	font-size:.9em;
@@ -960,8 +1058,22 @@ font-weight:lighter;
 }
 .RoadMap_Half_Container_Title {
 	width:100%;
-	padding:5px;
 	margin-bottom:10px;
+	border-bottom:1px solid #11747f;
+	border-top:1px solid #11747f;
+}
+@media only screen and (max-width:900px) {
+	.Full_Width_Container_Titles {
+		display:none;
+	}
+	.Full_Width_Container_Content {
+		display:none;
+	}
+}
+@media only screen and (min-width:901px) {
+	.Max-Width-container {
+		display:none;
+	}
 }
 @media only screen and (max-width:615px) {
 	#Queue_Numbers_Left {
@@ -971,6 +1083,35 @@ font-weight:lighter;
 @media only screen and (max-width:639px) {
 	.RoadMap_Half_Container {
 		width:100%;
+		padding-left:0px;
+		padding-right:0px;
+	}
+	.Full_Width_Container_RoadMap_Titles {
+		display:none;
+	}
+	.RoadMap_Half_Container_Title {
+		display:flex;
+	}
+}
+@media only screen and (min-width:640px) {
+	.RoadMap_Half_Container_Title {
+		display:none;
+	}
+}
+@media only screen and (max-width:659px) {
+	#ccbtn_Queue {
+		margin-top:10px;
+	}
+	#Queue_Referal_Code_Input {
+		margin-top:10px;
+	}
+	.form-group {
+		margin-bottom:0px;
+	}
+	.Bottom_Content_Margin {
+		width:100%;
+		margin-left:0px;
+		margin-right:0px;
 	}
 }
 input {
