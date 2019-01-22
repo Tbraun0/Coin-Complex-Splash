@@ -115,7 +115,7 @@ $("#click3").click(function() {
 });
 $("#click4").click(function() {
     $('html, body').animate({
-        scrollTop: $("#Content_4").offset().top + 180
+        scrollTop: $("#Content_4").offset().top -110
     }, 1000);
 });
 
